@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Python Basic Quiz</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      .questionspace {
+        position: relative;
+        width: 800px;
+        left: 220px;
+        background-color: rgb(145, 145, 145);
+        height: 450px;
+        overflow-x: auto;
+        padding: 10px;
+      }
+      .submitbutton {
+        position: absolute;
+        height: 1cm;
+        width: 5cm;
+        background-color: brown;
+        margin-top: 30px;
+        top: 800px;
+        left: 200px;
+        border-style: solid;
+        border-color: crimson;
+        border-radius: 20px;
+      }
+      .submitbutton:hover {
+        transform: scale(1.05);
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Python Basic level</h1>
+    </div>
+    <div class="questionspace">
+      <p>1. What keyword is used to define a function in Python?</p>
+      <input type="radio" id="define" name="BPquiz1" value="define" /><label
+        >define</label
+      >
+      <input type="radio" id="function" name="BPquiz1" value="function" /><label
+        >function</label
+      >
+      <input type="radio" id="def" name="BPquiz1" value="def" /><label
+        >def</label
+      >
+      <input type="radio" id="fun" name="BPquiz1" value="fun" /><label
+        >fun</label
+      >
+
+      <br />
+      <hr />
+      <p>2. What is the data type of input() return value?</p>
+      <input type="radio" id="int" name="BPquiz2" value="int" /><label
+        >int</label
+      >
+      <input type="radio" id="float" name="BPquiz2" value="float" /><label
+        >float</label
+      >
+      <input type="radio" id="bool" name="BPquiz2" value="bool" /><label
+        >bool</label
+      >
+      <input type="radio" id="str" name="BPquiz2" value="str" /><label
+        >str</label
+      >
+      <br />
+      <hr />
+
+      <p>3. What will len("Python") return?</p>
+      <input type="radio" id="five" name="BPquiz3" value="five" /><label
+        >5</label
+      >
+      <input type="radio" id="six" name="BPquiz3" value="six" /><label>6</label>
+      <input type="radio" id="seven" name="BPquiz3" value="seven" /><label
+        >7</label
+      >
+      <input type="radio" id="error" name="BPquiz3" value="error" /><label
+        >Error</label
+      >
+
+      <br />
+      <hr />
+      <p>4. Which of these is a mutable data type?</p>
+      <input type="radio" id="tuple" name="BPquiz4" value="tuple" /><label
+        >tuple</label
+      >
+      <input type="radio" id="string" name="BPquiz4" value="string" /><label
+        >string</label
+      >
+      <input type="radio" id="list" name="BPquiz4" value="list" /><label
+        >list</label
+      >
+      <input type="radio" id="int" name="BPquiz4" value="int" /><label
+        >int</label
+      >
+      <br />
+      <hr />
+
+      <p>5. Which function checks the type of a variable?</p>
+      <input type="radio" id="typeof" name="BPquiz5" value="typeof" /><label
+        >typeof()</label
+      >
+      <input type="radio" id="type" name="BPquiz5" value="type" /><label
+        >type()</label
+      >
+      <input type="radio" id="varType" name="BPquiz5" value="varType" /><label
+        >varType()</label
+      >
+      <input type="radio" id="getType" name="BPquiz5" value="getType" /><label
+        >getType()</label
+      >
+      <br />
+      <hr />
+
+      <p>6. Which keyword is used for a loop in Python?</p>
+      <input type="radio" id="repeat" name="BPquiz6" value="repeat" /><label
+        >repeat</label
+      >
+      <input type="radio" id="loop" name="BPquiz6" value="loop" /><label
+        >loop</label
+      >
+      <input type="radio" id="for" name="BPquiz6" value="for" /><label
+        >for</label
+      >
+      <input type="radio" id="iterate" name="BPquiz6" value="iterate" /><label
+        >iterate</label
+      >
+      <br />
+      <hr />
+      <p>7. Which of the following is not a keyword in Python?</p>
+      <input type="radio" id="pass" name="BPquiz7" value="pass" /><label
+        >pass</label
+      >
+      <input type="radio" id="eval" name="BPquiz7" value="eval" /><label
+        >eval</label
+      >
+      <input type="radio" id="continue" name="BPquiz7" value="continue" /><label
+        >continue</label
+      >
+      <input type="radio" id="break" name="BPquiz7" value="break" /><label
+        >break</label
+      >
+      <br />
+      <hr />
+
+      <p>8. Which one is a boolean value in Python?</p>
+      <input type="radio" id="Yes" name="BPquiz8" value="Yes" /><label
+        >Yes</label
+      >
+      <input type="radio" id="TRUE" name="BPquiz8" value="TRUE" /><label
+        >TRUE</label
+      >
+      <input type="radio" id="true" name="BPquiz8" value="true" /><label
+        >true</label
+      >
+      <input type="radio" id="True" name="BPquiz8" value="True" /><label
+        >True</label
+      >
+
+      <br />
+      <hr />
+      <p>9. What does // do in Python?</p>
+      <input
+        type="radio"
+        id="Remainder"
+        name="BPquiz9"
+        value="Remainder"
+      /><label>Remainder</label>
+      <input type="radio" id="Power" name="BPquiz9" value="Power" /><label
+        >Power</label
+      >
+      <input
+        type="radio"
+        id="Floor division"
+        name="BPquiz9"
+        value="Floor division"
+      /><label>Floor division</label>
+      <input type="radio" id="Division" name="BPquiz9" value="Division" /><label
+        >Division</label
+      >
+
+      <br />
+      <hr />
+      <p>10. Which function is used to round a number?</p>
+      <input type="radio" id="floor" name="BPquiz10" value="floor" /><label
+        >floor()</label
+      >
+      <input type="radio" id="round()" name="BPquiz10" value="round()" /><label
+        >round()</label
+      >
+      <input type="radio" id="ceil" name="BPquiz10" value="ceil" /><label
+        >ceil()</label
+      >
+      <input
+        type="radio"
+        id="truncate"
+        name="BPquiz10"
+        value="truncate"
+      /><label>truncate()</label>
+
+      <div class="submitdiv">
+        <button class="submitbutton" onclick="result()">Submit</button>
+      </div>
+    </div>
+  </body>
+  <script>
+    function result() {
+      const correctAnswers = {
+        BPquiz1: "def",
+        BPquiz2: "str",
+        BPquiz3: "six",
+        BPquiz4: "list",
+        BPquiz5: "type",
+        BPquiz6: "for",
+        BPquiz7: "eval",
+        BPquiz8: "True",
+        BPquiz9: "Floor division",
+        BPquiz10: "round()",
+      };
+
+      let score = 0;
+      let total = Object.keys(correctAnswers).length;
+
+      for (let key in correctAnswers) {
+        const selected = document.querySelector(`input[name="${key}"]:checked`);
+        if (selected && selected.value === correctAnswers[key]) {
+          score++;
+        }
+      }
+
+      alert(`You got ${score} out of ${total} correct!`);
+    }
+  </script>
+</html>

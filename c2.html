@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> C Intermediate Quiz</title>
+         <style>
+      h1 {
+        text-align: center;
+      }
+      .questionspace {
+        position: relative;
+        width: 800px;
+        left: 220px;
+        background-color: rgb(145, 145, 145);
+        height: 450px;
+        overflow-x: auto;
+        padding: 10px;
+      }
+      .submitbutton {
+        position: absolute;
+        height: 1cm;
+        width: 5cm;
+        background-color: brown;
+        margin-top: 30px;
+        top: 800px;
+        left: 200px;
+        border-style: solid;
+        border-color: crimson;
+        border-radius: 20px;
+      }
+      .submitbutton:hover {
+        transform: scale(1.05);
+      }
+    </style>
+</head>
+<body>
+    <div>
+        <h1> C Intermediate  level</h1>
+    </div>
+    <div class="questionspace">
+        <p>1. What is the return type of sizeof operator?</p>
+        <input type="radio" id="int" name="ICquiz1" value="int"><label>int</label>
+        <input type="radio" id="long" name="ICquiz1" value="long"><label>long</label>
+        <input type="radio" id="size_t" name="ICquiz1" value="size_t"><label>size_t</label>
+        <input type="radio" id="float" name="ICquiz1" value="float"><label>float</label>
+         <br><hr>
+        
+        <p>2. Which function copies strings?</p>
+        <input type="radio" id=" strcpy" name="ICquiz2" value="strcpy"><label> strcpy()</label>
+        <input type="radio" id=" strcopy" name="ICquiz2" value="strcopy"><label> strcopy()</label>
+        <input type="radio" id=" memcpy" name="ICquiz2" value="memcpy"><label> memcpy()</label>
+        <input type="radio" id="strmove" name="ICquiz2" value="strmove"><label>strmove()</label>
+         <br><hr>
+        
+        <p>3. Which loop is ideal when count is known?</p>
+        <input type="radio" id="while" name="ICquiz3" value="while"><label>while</label>
+        <input type="radio" id=" do-while" name="ICquiz3" value="do-while"><label> do-while</label>
+        <input type="radio" id="for" name="ICquiz3" value="for"><label>for</label>
+        <input type="radio" id="goto" name="ICquiz3" value="goto"><label>goto</label>
+         <br><hr>
+        
+        <p>4. What is a dangling pointer?</p>
+        <input type="radio" id="Unused" name="ICquiz4" value="Unused"><label>Unused</label>
+        <input type="radio" id="Null" name="ICquiz4" value="Null"><label>Null</label>
+        <input type="radio" id="Points" name="ICquiz4" value="Points"><label>Points to freed memory</label>
+        <input type="radio" id="Double" name="ICquiz4" value="Double"><label>Double pointer</label>
+         <br><hr>
+        
+        <p>5. What is the scope of a global variable?</p>
+        <input type="radio" id="Block" name="ICquiz5" value="Block"><label>Block</label>
+        <input type="radio" id="Program" name="ICquiz5" value="Program"><label>Program</label>
+        <input type="radio" id="File" name="ICquiz5" value="File"><label>File</label>
+        <input type="radio" id="Function" name="ICquiz5" value="Function"><label>Function</label>
+       <br><hr>
+       
+        
+        <p>6. Which is not a valid storage class?</p>
+        <input type="radio" id="static" name="ICquiz6" value="static"><label>static</label>
+        <input type="radio" id="register" name="ICquiz6" value="register"><label>register</label>
+        <input type="radio" id="local" name="ICquiz6" value="local"><label>local</label>
+        <input type="radio" id="auto" name="ICquiz6" value="auto"><label>auto</label>
+       
+          <br><hr>
+        <p>7. How many times will while(1) loop run?</p>
+        <input type="radio" id="Once" name="ICquiz7" value="Once"><label>Once</label>
+        <input type="radio" id="Zero" name="ICquiz7" value="Zero"><label>Zero</label>
+        <input type="radio" id="Infinite" name="ICquiz7" value="Infinite"><label>Infinite</label>
+        <input type="radio" id="Error" name="ICquiz7" value="Error"><label>Error</label>
+         <br><hr>
+        
+        <p>8. Where are local variables stored?</p>
+        <input type="radio" id="Stack" name="ICquiz8" value="Stack"><label>Stack</label>
+        <input type="radio" id="Heap" name="ICquiz8" value="Heap"><label>Heap</label>
+        <input type="radio" id="Data" name="ICquiz8" value="Data"><label>Data</label>
+        <input type="radio" id="Code" name="ICquiz8" value="Code"><label>Code</label>
+         <br><hr>
+        
+        <p>9. Which keyword defines enumeration?</p>
+        <input type="radio" id="define" name="ICquiz9" value="define"><label>define</label>
+        <input type="radio" id="enum" name="ICquiz9" value="enum"><label>enum</label>
+        <input type="radio" id="set" name="ICquiz9" value="set"><label>set</label>
+        <input type="radio" id="list" name="ICquiz9" value="list"><label>list</label>
+         <br><hr>
+        
+        <p>10. Where are static variables stored?</p>
+        <input type="radio" id="Stack" name="ICquiz10" value="Stack"><label>Stack</label>
+        <input type="radio" id="Heap" name="ICquiz10" value="Heap"><label>Heap</label>
+        <input type="radio" id="Code" name="ICquiz10" value="Code"><label>Code</label>
+        <input type="radio" id="Data" name="ICquiz10" value="Data"><label>Data</label>
+       
+        <div class="submitdiv">
+            <button class="submitbutton" onclick="result()">Submit</button>
+        </div>
+    </div>
+        
+    </div>
+</body>
+ <script>
+    function result() {
+      const correctAnswers = {
+        ICquiz1: "size_t",
+        ICquiz2: "strcpy",
+        ICquiz3: "for",
+        ICquiz4: "Double",
+        ICquiz5: "Program",
+        ICquiz6: "local",
+        ICquiz7: "Infinite",
+        ICquiz8: "Stack",
+        ICquiz9: "enum",
+        ICquiz10: "Data",
+      };
+
+      let score = 0;
+      let total = Object.keys(correctAnswers).length;
+
+      for (let key in correctAnswers) {
+        const selected = document.querySelector(`input[name="${key}"]:checked`);
+        if (selected && selected.value === correctAnswers[key]) {
+          score++;
+        }
+      }
+
+      alert(`You got ${score} out of ${total} correct!`);
+    }
+  </script>
+</html>

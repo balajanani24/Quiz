@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Intermediate Quiz</title>
+             <style>
+      h1 {
+        text-align: center;
+      }
+      .questionspace {
+        position: relative;
+        width: 800px;
+        left: 220px;
+        background-color: rgb(145, 145, 145);
+        height: 450px;
+        overflow-x: auto;
+        padding: 10px;
+      }
+      .submitbutton {
+        position: absolute;
+        height: 1cm;
+        width: 5cm;
+        background-color: brown;
+        margin-top: 30px;
+        top: 800px;
+        left: 200px;
+        border-style: solid;
+        border-color: crimson;
+        border-radius: 20px;
+      }
+      .submitbutton:hover {
+        transform: scale(1.05);
+      }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Java Intermediate Level</h1>
+    </div>
+    <div class="questionspace">
+        <p>1. Which class is the superclass of all classes in Java?</p>
+        <input type="radio" id="Object" name="IJquiz1" value="Object"><label>Object</label>
+        <input type="radio" id="Base" name="IJquiz1" value="Base"><label>Base</label>
+        <input type="radio" id="Root" name="IJquiz1" value="Root"><label>Root</label>
+        <input type="radio" id="Super" name="IJquiz1" value="Super"><label>Super</label>
+       
+          <br><hr>
+        <p>2. Which interface must be implemented to create a thread?</p>
+        <input type="radio" id="Runnable" name="IJquiz2" value="Runnable"><label>Runnable</label>
+        <input type="radio" id="Threadable" name="IJquiz2" value="Threadable"><label>Threadable</label>
+        <input type="radio" id="Startable" name="IJquiz2" value="Startable"><label>Startable</label>
+        <input type="radio" id="Callable" name="IJquiz2" value="Callable"><label>Callable</label>
+         <br><hr>
+        
+        <p>3. Which keyword is used to call the constructor of a parent class?</p>
+        <input type="radio" id="super" name="IJquiz3" value="super"><label>super</label>
+        <input type="radio" id="parent" name="IJquiz3" value="parent"><label>parent</label>
+        <input type="radio" id="this" name="IJquiz3" value="this"><label>this</label>
+        <input type="radio" id="base" name="IJquiz3" value="base"><label>base</label>
+       
+          <br><hr>
+        <p>4. Which block is always executed, whether exception occurs or not?</p>
+        <input type="radio" id="catch" name="IJquiz4" value="catch"><label>catch</label>
+        <input type="radio" id="finally" name="IJquiz4" value="finally"><label>finally</label>
+        <input type="radio" id="throw" name="IJquiz4" value="throw"><label>throw</label>
+        <input type="radio" id="try" name="IJquiz4" value="try"><label>try</label>
+       
+          <br><hr>
+        <p>5. Which keyword is used to handle exceptions?</p>
+        <input type="radio" id="error" name="IJquiz5" value="error"><label>error</label>
+        <input type="radio" id="catch" name="IJquiz5" value="catch"><label>catch</label>
+        <input type="radio" id="if" name="IJquiz5" value="if"><label>if</label>
+        <input type="radio" id="assert" name="IJquiz5" value="assert"><label>assert</label>
+         <br><hr>
+        
+        <p>6. Which exception is a checked exception?</p>
+        <input type="radio" id="NullPointerException" name="IJquiz6" value="NullPointerException"><label>NullPointerException</label>
+        <input type="radio" id="ArithmeticException" name="IJquiz6" value="ArithmeticException"><label>ArithmeticException</label>
+        <input type="radio" id="IOException" name="IJquiz6" value="IOException"><label>IOException</label>
+        <input type="radio" id="ArrayIndexOutOfBounds" name="IJquiz6" value="ArrayIndexOutOfBounds"><label>ArrayIndexOutOfBounds</label>
+       
+          <br><hr>
+        <p>7.Which modifier makes a method unchangeable in subclass?</p>
+        <input type="radio" id="final" name="IJquiz7" value="final"><label>final</label>
+        <input type="radio" id="static" name="IJquiz7" value="static"><label>static</label>
+        <input type="radio" id="abstract" name="IJquiz7" value="abstract"><label>abstract</label>
+        <input type="radio" id="protected" name="IJquiz7" value="protected"><label>protected</label>
+         <br><hr>
+        
+        <p>8. Which exception is thrown when dividing by zero?</p>
+        <input type="radio" id="DivideByZeroException" name="IJquiz8" value="DivideByZeroException"><label>DivideByZeroException</label>
+        <input type="radio" id="ArithmeticException" name="IJquiz8" value="ArithmeticException"><label>ArithmeticException</label>
+        <input type="radio" id="NullPointerException" name="IJquiz8" value="NullPointerException"><label>NullPointerException</label>
+        <input type="radio" id="ZeroDivision" name="IJquiz8" value="ZeroDivision"><label>ZeroDivision</label>
+         <br><hr>
+        
+        <p>9. Which keyword is used to define an abstract method?</p>
+        <input type="radio" id="virtual" name="IJquiz9" value="virtual"><label>virtual</label>
+        <input type="radio" id="final" name="IJquiz9" value="final"><label>final</label>
+        <input type="radio" id="abstract" name="IJquiz9" value="abstract"><label>abstract</label>
+        <input type="radio" id="static" name="IJquiz9" value="static"><label>static</label>
+       
+          <br><hr>
+        <p>10. Which keyword is used for inheritance?</p>
+        <input type="radio" id="include" name="IJquiz10" value="include"><label>include</label>
+        <input type="radio" id="import" name="IJquiz10" value="import"><label>import</label>
+        <input type="radio" id="extends" name="IJquiz10" value="extends"><label>extends</label>
+        <input type="radio" id="inherit" name="IJquiz10" value="inherit"><label>inherit</label>
+         
+        <div class="submitdiv">
+            <button class="submitbutton" onclick="result()">Submit</button>
+        </div>      
+        
+    </div>
+</body>
+ <script>
+    function result() {
+      const correctAnswers = {
+        IJquiz1: "Object",
+        IJquiz2: "Runnable",
+        IJquiz3: "super",
+        IJquiz4: "finally",
+        IJquiz5: "catch",
+        IJquiz6:"IOException",
+        IJquiz7: "final",
+        IJquiz8: "ArithmeticException",
+        IJquiz9: "abstract",
+        IJquiz10: "extends",
+      };
+
+      let score = 0;
+      let total = Object.keys(correctAnswers).length;
+
+      for (let key in correctAnswers) {
+        const selected = document.querySelector(`input[name="${key}"]:checked`);
+        if (selected && selected.value === correctAnswers[key]) {
+          score++;
+        }
+      }
+
+      alert(`You got ${score} out of ${total} correct!`);
+    }
+  </script>
+</html>

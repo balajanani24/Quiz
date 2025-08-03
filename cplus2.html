@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C++ Intermediate Quiz</title>
+             <style>
+      h1 {
+        text-align: center;
+      }
+      .questionspace {
+        position: relative;
+        width: 800px;
+        left: 220px;
+        background-color: rgb(145, 145, 145);
+        height: 450px;
+        overflow-x: auto;
+        padding: 10px;
+      }
+      .submitbutton {
+        position: absolute;
+        height: 1cm;
+        width: 5cm;
+        background-color: brown;
+        margin-top: 30px;
+        top: 800px;
+        left: 200px;
+        border-style: solid;
+        border-color: crimson;
+        border-radius: 20px;
+      }
+      .submitbutton:hover {
+        transform: scale(1.05);
+      }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>C++ Intermediate Level</h1>
+    </div>
+    <div class="questionspace">
+        <p>1. What does the this pointer point to?</p>
+        <input type="radio" id="Class" name="ICPquiz1" value="Class"><label>Class</label>
+        <input type="radio" id="Currentobject" name="ICPquiz1" value="Currentobject"><label>Current object</label>
+        <input type="radio" id="Baseclass" name="ICPquiz1" value="Baseclass"><label>Base class</label>
+        <input type="radio" id="Derivedclass" name="ICPquiz1" value="Derivedclass"><label>Derived class</label>
+       
+          <br><hr>
+        <p>2. Which of the following is used to free memory?</p>
+        <input type="radio" id="remove" name="ICPquiz2" value="remove"><label>remove</label>
+        <input type="radio" id="delete" name="ICPquiz2" value="delete"><label>delete</label>
+        <input type="radio" id="destroy" name="ICPquiz2" value="destroy"><label>destroy</label>
+        <input type="radio" id="clear" name="ICPquiz2" value="clear"><label>clear</label>
+         <br><hr>
+        
+        <p>3. Which keyword is used for abstract class?</p>
+        <input type="radio" id="virtual" name="ICPquiz3" value="virtual"><label>virtual</label>
+        <input type="radio" id="abstract" name="ICPquiz3" value="abstract"><label>abstract</label>
+        <input type="radio" id="base" name="ICPquiz3" value="base"><label>base</label>
+        <input type="radio" id="class" name="ICPquiz3" value="class"><label>class</label>
+       
+          <br><hr>
+        <p>4. Which header file supports STL containers?</p>
+        <input type="radio" id="vector" name="ICPquiz4" value="vector"><label>vector</label>
+        <input type="radio" id="iostream" name="ICPquiz4" value="iostream"><label>iostream</label>
+        <input type="radio" id="stl.h" name="ICPquiz4" value="stl.h"><label>stl.h</label>
+        <input type="radio" id="list" name="ICPquiz4" value="list"><label>list</label>
+       
+          <br><hr>
+        <p>5. Which is not part of STL?</p>
+        <input type="radio" id="map" name="ICPquiz5" value="map"><label>map</label>
+        <input type="radio" id="tree" name="ICPquiz5" value="tree"><label>tree</label>
+        <input type="radio" id="array" name="ICPquiz5" value="array"><label>array</label>
+        <input type="radio" id="deque" name="ICPquiz5" value="deque"><label>deque</label>
+         <br><hr>
+        
+        <p>6. Which data structure does a queue use?</p>
+        <input type="radio" id="FIFO" name="ICPquiz6" value="FIFO"><label>FIFO</label>
+        <input type="radio" id="LIFO" name="ICPquiz6" value="LIFO"><label>LIFO</label>
+        <input type="radio" id="Random" name="ICPquiz6" value="Random"><label>Random</label>
+        <input type="radio" id="Binary" name="ICPquiz6" value="Binary"><label>Binary</label>
+       
+          <br><hr>
+        <p>7. Which container is best for fast searching?</p>
+        <input type="radio" id="vector" name="ICPquiz7" value="vector"><label>vector</label>
+        <input type="radio" id="list" name="ICPquiz7" value="list"><label>list</label>
+        <input type="radio" id="map" name="ICPquiz7" value="map"><label>map</label>
+        <input type="radio" id="stack" name="ICPquiz7" value="stack"><label>stack</label>
+         <br><hr>
+        
+        <p>8. What is dynamic_cast used for?</p>
+        <input type="radio" id="Downcasting" name="ICPquiz8" value="Downcasting"><label>Downcasting</label>
+        <input type="radio" id="Upcasting" name="ICPquiz8" value="Upcasting"><label>Upcasting</label>
+        <input type="radio" id="Memoryrelease" name="ICPquiz8" value="Memoryrelease"><label>Memory release</label>
+        <input type="radio" id="Syntaxchecking" name="ICPquiz8" value=" Syntaxchecking"><label> Syntax checking</label>
+         <br><hr>
+        
+        <p>9. What type of inheritance includes more than one base class?</p>
+        <input type="radio" id="Single" name="ICPquiz9" value="Single"><label>Single</label>
+        <input type="radio" id="Hybrid" name="ICPquiz9" value="Hybrid"><label>Hybrid</label>
+        <input type="radio" id="Multilevel" name="ICPquiz9" value="Multilevel"><label>Multilevel</label>
+        <input type="radio" id="Multiple" name="ICPquiz9" value="Multiple"><label>Multiple</label>
+       
+          <br><hr>
+        <p>10.Which keyword creates a template?</p>
+        <input type="radio" id="generic" name="ICPquiz10" value="generic"><label>generic</label>
+        <input type="radio" id="template" name="ICPquiz10" value="template"><label>template</label>
+        <input type="radio" id="define" name="ICPquiz10" value="define"><label>define</label>
+        <input type="radio" id="macro" name="ICPquiz10" value="macro"><label>macro</label>
+         
+        <div class="submitdiv">
+            <button class="submitbutton" onclick="result()">Submit</button>
+        </div>      
+        
+    </div>
+</body>
+ <script>
+    function result() {
+      const correctAnswers = {
+        ICPquiz1: "Currentobject",
+        ICPquiz2: "delete",
+        ICPquiz3: "virtual",
+        ICPquiz4: "vector",
+        ICPquiz5: "tree",
+        ICPquiz6: "FIFO",
+        ICPquiz7: "map",
+        ICPquiz8: "Downcasting",
+        ICPquiz9: "Multiple",
+        ICPquiz10: "template",
+      };
+
+      let score = 0;
+      let total = Object.keys(correctAnswers).length;
+
+      for (let key in correctAnswers) {
+        const selected = document.querySelector(`input[name="${key}"]:checked`);
+        if (selected && selected.value === correctAnswers[key]) {
+          score++;
+        }
+      }
+
+      alert(`You got ${score} out of ${total} correct!`);
+    }
+  </script>
+</html>

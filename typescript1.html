@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TypeScript Basic Quiz</title>
+  <style>
+    h1 {
+      text-align: center;
+    }
+    .questionspace {
+      position: relative;
+      width: 800px;
+      left: 220px;
+      background-color: rgb(145, 145, 145);
+      height: 450px;
+      overflow-x: auto;
+      padding: 10px;
+    }
+    .submitbutton {
+      position: absolute;
+      height: 1cm;
+      width: 5cm;
+      background-color: brown;
+      margin-top: 30px;
+      top: 1400px;
+      left: 200px;
+      border-style: solid;
+      border-color: crimson;
+      border-radius: 20px;
+      cursor: pointer;
+      color: white;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+    .submitbutton:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>TypeScript Basic Level</h1>
+  </div>
+
+  <div class="questionspace">
+    <p>1. Which keyword is used to define a variable with block scope?</p>
+    <input type="radio" name="quiz1" value="var"><label>var</label><br/>
+    <input type="radio" name="quiz1" value="let"><label>let</label><br/>
+    <input type="radio" name="quiz1" value="const"><label>const</label><br/>
+    <input type="radio" name="quiz1" value="static"><label>static</label>
+    <br><hr>
+
+    <p>2. What type is assigned to a variable declared as <code>let age: number;</code>?</p>
+    <input type="radio" name="quiz2" value="string"><label>string</label><br/>
+    <input type="radio" name="quiz2" value="boolean"><label>boolean</label><br/>
+    <input type="radio" name="quiz2" value="number"><label>number</label><br/>
+    <input type="radio" name="quiz2" value="any"><label>any</label>
+    <br><hr>
+
+    <p>3. Which of the following is NOT a valid TypeScript data type?</p>
+    <input type="radio" name="quiz3" value="boolean"><label>boolean</label><br/>
+    <input type="radio" name="quiz3" value="float"><label>float</label><br/>
+    <input type="radio" name="quiz3" value="string"><label>string</label><br/>
+    <input type="radio" name="quiz3" value="any"><label>any</label>
+    <br><hr>
+
+    <p>4. What does the <code>interface</code> keyword define?</p>
+    <input type="radio" name="quiz4" value="A variable"><label>A variable</label><br/>
+    <input type="radio" name="quiz4" value="A class"><label>A class</label><br/>
+    <input type="radio" name="quiz4" value="A contract for object shape"><label>A contract for object shape</label><br/>
+    <input type="radio" name="quiz4" value="A function"><label>A function</label>
+    <br><hr>
+
+    <p>5. What will TypeScript infer as the type for <code>let x = 10;</code>?</p>
+    <input type="radio" name="quiz5" value="any"><label>any</label><br/>
+    <input type="radio" name="quiz5" value="number"><label>number</label><br/>
+    <input type="radio" name="quiz5" value="string"><label>string</label><br/>
+    <input type="radio" name="quiz5" value="unknown"><label>unknown</label>
+    <br><hr>
+
+    <p>6. What is the syntax to specify a function’s return type in TypeScript?</p>
+    <input type="radio" name="quiz6" value="function foo(): void {}"><label>function foo(): void {}</label><br/>
+    <input type="radio" name="quiz6" value="function foo(void) {}"><label>function foo(void) {}</label><br/>
+    <input type="radio" name="quiz6" value="function foo() => void {}"><label>function foo() => void {}</label><br/>
+    <input type="radio" name="quiz6" value="function foo() {}"><label>function foo() {}</label>
+    <br><hr>
+
+    <p>7. What does <code>any</code> type mean in TypeScript?</p>
+    <input type="radio" name="quiz7" value="Strictly typed"><label>Strictly typed</label><br/>
+    <input type="radio" name="quiz7" value="No type checking"><label>No type checking</label><br/>
+    <input type="radio" name="quiz7" value="Only strings"><label>Only strings</label><br/>
+    <input type="radio" name="quiz7" value="Only numbers"><label>Only numbers</label>
+    <br><hr>
+
+    <p>8. Which keyword is used to declare a constant?</p>
+    <input type="radio" name="quiz8" value="const"><label>const</label><br/>
+    <input type="radio" name="quiz8" value="let"><label>let</label><br/>
+    <input type="radio" name="quiz8" value="var"><label>var</label><br/>
+    <input type="radio" name="quiz8" value="constant"><label>constant</label>
+    <br><hr>
+
+    <p>9. What TypeScript feature helps to catch errors before running the code?</p>
+    <input type="radio" name="quiz9" value="Type inference"><label>Type inference</label><br/>
+    <input type="radio" name="quiz9" value="Transpilation"><label>Transpilation</label><br/>
+    <input type="radio" name="quiz9" value="Static typing"><label>Static typing</label><br/>
+    <input type="radio" name="quiz9" value="Dynamic typing"><label>Dynamic typing</label>
+    <br><hr>
+
+    <p>10. Which of these is the correct way to write an array of numbers?</p>
+    <input type="radio" name="quiz10" value="let arr: Array<number>"><label>let arr: Array<number></label><br/>
+    <input type="radio" name="quiz10" value="let arr: number[]"><label>let arr: number[]</label><br/>
+    <input type="radio" name="quiz10" value="Both"><label>Both</label><br/>
+    <input type="radio" name="quiz10" value="None"><label>None</label>
+    <br><hr>
+
+    <div class="submitdiv">
+      <button class="submitbutton" onclick="result()">Submit</button>
+    </div>
+  </div>
+
+  <script>
+    function result() {
+      const correctAnswers = {
+        quiz1: "let",
+        quiz2: "number",
+        quiz3: "float",
+        quiz4: "A contract for object shape",
+        quiz5: "number",
+        quiz6: "function foo(): void {}",
+        quiz7: "No type checking",
+        quiz8: "const",
+        quiz9: "Static typing",
+        quiz10: "Both"
+      };
+
+      let score = 0;
+      let total = Object.keys(correctAnswers).length;
+
+      for (let key in correctAnswers) {
+        const selected = document.querySelector(`input[name="${key}"]:checked`);
+        if (selected && selected.value === correctAnswers[key]) {
+          score++;
+        }
+      }
+
+      alert(`You got ${score} out of ${total} correct!`);
+    }
+  </script>
+</body>
+</html>

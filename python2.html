@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Intermediate Quiz</title>
+   <style>
+      h1 {
+        text-align: center;
+      }
+      .questionspace {
+        position: relative;
+        width: 800px;
+        left: 220px;
+        background-color: rgb(145, 145, 145);
+        height: 450px;
+        overflow-x: auto;
+        padding: 10px;
+      }
+      .submitbutton {
+        position: absolute;
+        height: 1cm;
+        width: 5cm;
+        background-color: brown;
+        margin-top: 30px;
+        top: 800px;
+        left: 200px;
+        border-style: solid;
+        border-color: crimson;
+        border-radius: 20px;
+      }
+      .submitbutton:hover {
+        transform: scale(1.05);
+      }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Python Intermediate Level</h1>
+    </div>
+    <div class="questionspace">
+        <p>1. What is the scope of a variable defined inside a function?</p>
+        <input type="radio" id="Global" name="IBquiz1" value="Global"><label>Global</label>
+        <input type="radio" id="Universal" name="IBquiz1" value="Universal"><label>Universal</label>
+        <input type="radio" id="Local" name="IBquiz1" value="Local"><label>Local</label>
+        <input type="radio" id="Static" name="IBquiz1" value="Static"><label>Static</label>
+       <br><hr>
+        
+        <p>2. Which module handles regular expressions?</p>
+        <input type="radio" id="regex" name="IBquiz2" value="regex"><label>regex</label>
+        <input type="radio" id="re" name="IBquiz2" value="re"><label>re</label>
+        <input type="radio" id="pattern" name="IBquiz2" value="pattern"><label>pattern</label>
+        <input type="radio" id="match" name="IBquiz2" value="match"><label>match</label>
+       <br><hr>
+        
+        <p>3. How do you raise an exception?</p>
+        <input type="radio" id="throw" name="IBquiz3" value="throw"><label>throw</label>
+        <input type="radio" id="raise" name="IBquiz3" value="raise"><label>raise</label>
+        <input type="radio" id="error" name="IBquiz3" value="error"><label>error</label>
+        <input type="radio" id="break" name="IBquiz3" value="break"><label>break</label>
+       <br><hr>
+        
+        <p>4. Which data structure uses key-value pairs?</p>
+        <input type="radio" id="list" name="IBquiz4" value="list"><label>list</label>
+        <input type="radio" id="tuple" name="IBquiz4" value="tuple"><label>tuple</label>
+        <input type="radio" id="dictionary" name="IBquiz4" value="dictionary"><label>dictionary</label>
+        <input type="radio" id="set" name="IBquiz4" value="set"><label>set</label>
+       
+        <br><hr>
+        <p>5. Which function gives the Unicode of a character?</p>
+        <input type="radio" id="ascii" name="IBquiz5" value="ascii"><label>ascii()</label>
+        <input type="radio" id="ord" name="IBquiz5" value="ord"><label>ord()</label>
+        <input type="radio" id="char" name="IBquiz5" value="char"><label>char()</label>
+        <input type="radio" id="unicode" name="IBquiz5" value="unicode"><label>unicode()</label>
+       <br><hr>
+        
+        <p>6. Which of the following is not a core data type? </p>
+        <input type="radio" id="list" name="IBquiz6" value="list"><label>list</label>
+        <input type="radio" id="dictionary" name="IBquiz6" value="dictionary"><label>dictionary</label>
+        <input type="radio" id="tuple" name="IBquiz6" value="tuple"><label>tuple</label>
+        <input type="radio" id="class" name="IBquiz6" value="class"><label>class</label>
+       <br><hr>
+        
+        <p>7. What is the result of 3 < 2 or 5 > 1? </p>
+        <input type="radio" id="True" name="IBquiz7" value="True"><label>True</label>
+        <input type="radio" id="False" name="IBquiz7" value="False"><label>False</label>
+        <input type="radio" id="Error" name="IBquiz7" value="Error"><label>Error</label>
+        <input type="radio" id="None" name="IBquiz7" value="None"><label>None</label>
+       <br><hr>
+        
+        <p>8. Which function converts a string to an integer?</p>
+        <input type="radio" id="float" name="IBquiz8" value="float"><label>float()</label>
+        <input type="radio" id="int" name="IBquiz8" value="int"><label>int()</label>
+        <input type="radio" id="str" name="IBquiz8" value="str"><label>str()</label>
+        <input type="radio" id="input" name="IBquiz8" value="input"><label>input()</label>
+       
+        <br><hr>
+        <p>9. What is the output of bool([])?</p>
+        <input type="radio" id="True" name="IBquiz9" value="True"><label>True</label>
+        <input type="radio" id="False" name="IBquiz9" value="False"><label>False</label>
+        <input type="radio" id="None" name="IBquiz9" value="None"><label>None</label>
+        <input type="radio" id="Error" name="IBquiz9" value="Error"><label>Error</label>
+       <br><hr>
+        
+        <p>10. Which keyword is used to handle exceptions?</p>
+        <input type="radio" id="error" name="IBquiz10" value="error"><label>error</label>
+        <input type="radio" id="if" name="IBquiz10" value="if"><label>if</label>
+        <input type="radio" id="catch" name="IBquiz10" value="catch"><label>catch</label>
+        <input type="radio" id="try" name="IBquiz10" value="try"><label>try</label>
+       
+      <div class="submitdiv">
+        <button class="submitbutton" onclick="result()">Submit</button>
+      </div>
+        
+    </div>
+</body>
+  <script>
+    function result() {
+      const correctAnswers = {
+        IBquiz1: "Local",
+        IBquiz2: "re",
+        IBquiz3: "raise",
+        IBquiz4: "dictionary",
+        IBquiz5: "ord",
+        IBquiz6: "class",
+        IBquiz7: "True",
+        IBquiz8: "int",
+        IBquiz9: "False",
+        IBquiz10: "try",
+      };
+
+      let score = 0;
+      let total = Object.keys(correctAnswers).length;
+
+      for (let key in correctAnswers) {
+        const selected = document.querySelector(`input[name="${key}"]:checked`);
+        if (selected && selected.value === correctAnswers[key]) {
+          score++;
+        }
+      }
+
+      alert(`You got ${score} out of ${total} correct!`);
+    }
+  </script>
+</html>

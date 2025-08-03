@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> C++ Basic Quiz</title>
+             <style>
+      h1 {
+        text-align: center;
+      }
+      .questionspace {
+        position: relative;
+        width: 800px;
+        left: 220px;
+        background-color: rgb(145, 145, 145);
+        height: 450px;
+        overflow-x: auto;
+        padding: 10px;
+      }
+      .submitbutton {
+        position: absolute;
+        height: 1cm;
+        width: 5cm;
+        background-color: brown;
+        margin-top: 30px;
+        top: 800px;
+        left: 200px;
+        border-style: solid;
+        border-color: crimson;
+        border-radius: 20px;
+      }
+      .submitbutton:hover {
+        transform: scale(1.05);
+      }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>C++ Basic Level</h1>
+    </div>
+    <div class="questionspace">
+        <p>1. Which of these is not a basic data type in C++?</p>
+        <input type="radio" id="int" name="BCPquiz1" value="int"><label>int</label>
+        <input type="radio" id="float" name="BCPquiz1" value="float"><label>float</label>
+        <input type="radio" id="bool" name="BCPquiz1" value="bool"><label>bool</label>
+        <input type="radio" id="string" name="BCPquiz1" value="string"><label>string</label>
+       
+          <br><hr>
+        <p>2. Which keyword is used to create an object?</p>
+        <input type="radio" id="obj" name="BCPquiz2" value="obj"><label>obj</label>
+        <input type="radio" id="class" name="BCPquiz2" value="class"><label>class</label>
+        <input type="radio" id="new" name="BCPquiz2" value="new"><label>new</label>
+        <input type="radio" id="object" name="BCPquiz2" value="object"><label>object</label>
+         <br><hr>
+        
+        <p>3. Which is used to define a class?</p>
+        <input type="radio" id="class" name="BCPquiz3" value="class"><label>class</label>
+        <input type="radio" id="struct" name="BCPquiz3" value="struct"><label>struct</label>
+        <input type="radio" id="define" name="BCPquiz3" value="define"><label>define</label>
+        <input type="radio" id="module" name="BCPquiz3" value="module"><label>module</label>
+       
+          <br><hr>
+        <p>4. What is used to return a value from a function?</p>
+        <input type="radio" id="return" name="BCPquiz4" value="return"><label>return</label>
+        <input type="radio" id="back" name="BCPquiz4" value="back"><label>back</label>
+        <input type="radio" id="exit" name="BCPquiz4" value="exit"><label>exit</label>
+        <input type="radio" id="send" name="BCPquiz4" value="send"><label>send</label>
+       
+          <br><hr>
+        <p>5. Which keyword defines a constant?</p>
+        <input type="radio" id="const" name="BCPquiz5" value="const"><label>const</label>
+        <input type="radio" id="fixed" name="BCPquiz5" value="fixed"><label>fixed</label>
+        <input type="radio" id="static" name="BCPquiz5" value="static"><label>static</label>
+        <input type="radio" id="let" name="BCPquiz5" value="let"><label>let</label>
+         <br><hr>
+        
+        <p>6. What is the function to start execution?</p>
+        <input type="radio" id="begin" name="BCPquiz6" value="begin"><label>begin</label>
+        <input type="radio" id="init" name="BCPquiz6" value="init"><label>init</label>
+        <input type="radio" id="start" name="BCPquiz6" value="start"><label>start</label>
+        <input type="radio" id="main" name="BCPquiz6" value="main"><label>main</label>
+       
+          <br><hr>
+        <p>7. Which concept allows using the same function name with different arguments?</p>
+        <input type="radio" id="Overloading" name="BCPquiz7" value="Overloading"><label>Overloading</label>
+        <input type="radio" id="Inheritance" name="BCPquiz7" value="Inheritance"><label>Inheritance</label>
+        <input type="radio" id="Encapsulation" name="BCPquiz7" value="Encapsulation"><label>Encapsulation</label>
+        <input type="radio" id="Overriding" name="BCPquiz7" value="Overriding"><label>Overriding</label>
+         <br><hr>
+        
+        <p>8. hich of these is a user-defined data type?</p>
+        <input type="radio" id="int" name="BCPquiz8" value="int"><label>int</label>
+        <input type="radio" id="class" name="BCPquiz8" value="class"><label>class</label>
+        <input type="radio" id="float" name="BCPquiz8" value="float"><label>float</label>
+        <input type="radio" id="bool" name="BCPquiz8" value="bool"><label>bool</label>
+         <br><hr>
+        
+        <p>9. Which function is used to read a line of text?</p>
+        <input type="radio" id="cin" name="BCPquiz9" value="cin"><label>cin</label>
+        <input type="radio" id="getline" name="BCPquiz9" value="getline"><label>getline</label>
+        <input type="radio" id="gets" name="BCPquiz9" value="gets"><label>gets</label>
+        <input type="radio" id="scan" name="BCPquiz9" value="scan"><label>scan</label>
+       
+          <br><hr>
+        <p>10. Which access specifier allows access only within the class?</p>
+        <input type="radio" id="public" name="BCPquiz10" value="public"><label>public</label>
+        <input type="radio" id="private" name="BCPquiz10" value="private"><label>private</label>
+        <input type="radio" id="protected" name="BCPquiz10" value="protected"><label>protected</label>
+        <input type="radio" id="global" name="BCPquiz10" value="global"><label>global</label>
+         
+        <div class="submitdiv">
+            <button class="submitbutton" onclick="result()">Submit</button>
+        </div>      
+        
+    </div>
+</body>
+ <script>
+    function result() {
+      const correctAnswers = {
+        BCPquiz1: "string",
+        BCPquiz2: "new",
+        BCPquiz3: "class",
+        BCPquiz4: "return",
+        BCPquiz5: "const",
+        BCPquiz6: "main",
+        BCPquiz7: "Overloading",
+        BCPquiz8: "class",
+        BCPquiz9: "getline",
+        BCPquiz10: "private",
+      };
+
+      let score = 0;
+      let total = Object.keys(correctAnswers).length;
+
+      for (let key in correctAnswers) {
+        const selected = document.querySelector(`input[name="${key}"]:checked`);
+        if (selected && selected.value === correctAnswers[key]) {
+          score++;
+        }
+      }
+
+      alert(`You got ${score} out of ${total} correct!`);
+    }
+  </script>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>R Language Basic Level</title>
+  <style>
+    h1 {
+      text-align: center;
+    }
+    .questionspace {
+      position: relative;
+      width: 800px;
+      left: 220px;
+      background-color: rgb(145, 145, 145);
+      height: 450px;
+      overflow-x: auto;
+      padding: 10px;
+    }
+    .submitbutton {
+      position: absolute;
+      height: 1cm;
+      width: 5cm;
+      background-color: brown;
+      margin-top: 30px;
+      top: 800px;
+      left: 200px;
+      border-style: solid;
+      border-color: crimson;
+      border-radius: 20px;
+    }
+    .submitbutton:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>R Language Basic Level</h1>
+  </div>
+
+  <div class="questionspace">
+    <p>1. What is the assignment operator in R?</p>
+    <input type="radio" name="quiz1" value="="><label>=</label>
+    <input type="radio" name="quiz1" value="<-"><label>&lt;-</label>
+    <input type="radio" name="quiz1" value=":="><label>:=</label>
+    <input type="radio" name="quiz1" value="=="><label>==</label>
+    <br><hr>
+
+    <p>2. What data type is returned by <code>class(5L)</code> in R?</p>
+    <input type="radio" name="quiz2" value="numeric"><label>numeric</label>
+    <input type="radio" name="quiz2" value="integer"><label>integer</label>
+    <input type="radio" name="quiz2" value="double"><label>double</label>
+    <input type="radio" name="quiz2" value="character"><label>character</label>
+    <br><hr>
+
+    <p>3. What function is used to combine elements into a vector?</p>
+    <input type="radio" name="quiz3" value="vector"><label>vector()</label>
+    <input type="radio" name="quiz3" value="combine"><label>combine()</label>
+    <input type="radio" name="quiz3" value="c"><label>c()</label>
+    <input type="radio" name="quiz3" value="list"><label>list()</label>
+    <br><hr>
+
+    <p>4. Which function gives the structure of an R object?</p>
+    <input type="radio" name="quiz4" value="str"><label>str()</label>
+    <input type="radio" name="quiz4" value="summary"><label>summary()</label>
+    <input type="radio" name="quiz4" value="type"><label>type()</label>
+    <input type="radio" name="quiz4" value="structure"><label>structure()</label>
+    <br><hr>
+
+    <p>5. What symbol is used for comments in R?</p>
+    <input type="radio" name="quiz5" value="//"><label>//</label>
+    <input type="radio" name="quiz5" value="--"><label>--</label>
+    <input type="radio" name="quiz5" value="#"><label>#</label>
+    <input type="radio" name="quiz5" value="/* */"><label>/* */</label>
+    <br><hr>
+
+    <p>6. What is the output of <code>typeof(TRUE)</code>?</p>
+    <input type="radio" name="quiz6" value="boolean"><label>boolean</label>
+    <input type="radio" name="quiz6" value="logical"><label>logical</label>
+    <input type="radio" name="quiz6" value="numeric"><label>numeric</label>
+    <input type="radio" name="quiz6" value="character"><label>character</label>
+    <br><hr>
+
+    <p>7. Which function is used to read a CSV file in R?</p>
+    <input type="radio" name="quiz7" value="read.csv"><label>read.csv()</label>
+    <input type="radio" name="quiz7" value="scan"><label>scan()</label>
+    <input type="radio" name="quiz7" value="import"><label>import()</label>
+    <input type="radio" name="quiz7" value="file.read"><label>file.read()</label>
+    <br><hr>
+
+    <p>8. What function returns the number of rows in a data frame?</p>
+    <input type="radio" name="quiz8" value="nrow"><label>nrow()</label>
+    <input type="radio" name="quiz8" value="rows"><label>rows()</label>
+    <input type="radio" name="quiz8" value="length"><label>length()</label>
+    <input type="radio" name="quiz8" value="count"><label>count()</label>
+    <br><hr>
+
+    <p>9. Which one is NOT a valid data type in R?</p>
+    <input type="radio" name="quiz9" value="numeric"><label>numeric</label>
+    <input type="radio" name="quiz9" value="float"><label>float</label>
+    <input type="radio" name="quiz9" value="character"><label>character</label>
+    <input type="radio" name="quiz9" value="logical"><label>logical</label>
+    <br><hr>
+
+    <p>10. What function is used to generate a sequence in R?</p>
+    <input type="radio" name="quiz10" value="range"><label>range()</label>
+    <input type="radio" name="quiz10" value="seq"><label>seq()</label>
+    <input type="radio" name="quiz10" value="repeat"><label>repeat()</label>
+    <input type="radio" name="quiz10" value="series"><label>series()</label>
+    <br><hr>
+
+    <div class="submitdiv">
+      <button class="submitbutton" onclick="result()">Submit</button>
+    </div>
+  </div>
+
+  <script>
+    function result() {
+      const correctAnswers = {
+        quiz1: "<-",
+        quiz2: "integer",
+        quiz3: "c",
+        quiz4: "str",
+        quiz5: "#",
+        quiz6: "logical",
+        quiz7: "read.csv",
+        quiz8: "nrow",
+        quiz9: "float",
+        quiz10: "seq",
+      };
+
+      let score = 0;
+      let total = Object.keys(correctAnswers).length;
+
+      for (let key in correctAnswers) {
+        const selected = document.querySelector(`input[name="${key}"]:checked`);
+        if (selected && selected.value === correctAnswers[key]) {
+          score++;
+        }
+      }
+
+      alert(`You got ${score} out of ${total} correct! 🎉`);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Java Basic Quiz</title>
+             <style>
+      h1 {
+        text-align: center;
+      }
+      .questionspace {
+        position: relative;
+        width: 800px;
+        left: 220px;
+        background-color: rgb(145, 145, 145);
+        height: 450px;
+        overflow-x: auto;
+        padding: 10px;
+      }
+      .submitbutton {
+        position: absolute;
+        height: 1cm;
+        width: 5cm;
+        background-color: brown;
+        margin-top: 30px;
+        top: 800px;
+        left: 200px;
+        border-style: solid;
+        border-color: crimson;
+        border-radius: 20px;
+      }
+      .submitbutton:hover {
+        transform: scale(1.05);
+      }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Jaca Basic level</h1>
+    </div>
+    <div class="questionspace">
+        <p>1. Which keyword is used to define a class in Java?</p>
+        <input type="radio" id="method" name="BJquiz1" value="method"><label>method</label>
+        <input type="radio" id="class" name="BJquiz1" value="class"><label>class</label>
+        <input type="radio" id="def" name="BJquiz1" value="def"><label>def</label>
+        <input type="radio" id="object" name="BJquiz1" value="object"><label>object</label>
+       
+          <br><hr>
+        <p>2. What is the default value of a boolean in Java?</p>
+        <input type="radio" id="true" name="BJquiz2" value="true"><label>true</label>
+        <input type="radio" id="false" name="BJquiz2" value="false"><label>false</label>
+        <input type="radio" id="null" name="BJquiz2" value="null"><label>null</label>
+        <input type="radio" id="zero" name="BJquiz2" value="zero"><label>0</label>
+         <br><hr>
+        
+        <p>3. Which is not a primitive data type?</p>
+        <input type="radio" id="int" name="BJquiz3" value="int"><label>int</label>
+        <input type="radio" id="boolean" name="BJquiz3" value="boolean"><label>boolean</label>
+        <input type="radio" id="char" name="BJquiz3" value="char"><label>char</label>
+        <input type="radio" id="String" name="BJquiz3" value="String"><label>String</label>
+       
+          <br><hr>
+        <p>4. Which method is the entry point of a Java program?</p>
+        <input type="radio" id=" begin" name="BJquiz4" value=" begin"><label> begin()</label>
+        <input type="radio" id="start" name="BJquiz4" value="start"><label>start()</label>
+        <input type="radio" id=" main" name="BJquiz4" value="main"><label> main()</label>
+        <input type="radio" id="init" name="BJquiz4" value="init"><label>init()</label>
+       
+          <br><hr>
+        <p>5. Which keyword creates an object?</p>
+        <input type="radio" id="create" name="BJquiz5" value="create"><label>create</label>
+        <input type="radio" id="new" name="BJquiz5" value="new"><label>new</label>
+        <input type="radio" id="init" name="BJquiz5" value="init"><label>init</label>
+        <input type="radio" id="object" name="BJquiz5" value="object"><label>object</label>
+         <br><hr>
+        
+        <p>6. Which access modifier makes variables accessible only in the same class?</p>
+        <input type="radio" id="protected" name="BJquiz6" value="protected"><label>protected</label>
+        <input type="radio" id="public" name="BJquiz6" value="public"><label>public</label>
+        <input type="radio" id="private" name="BJquiz6" value="private"><label>private</label>
+        <input type="radio" id="static" name="BJquiz6" value="static"><label>static</label>
+       
+          <br><hr>
+        <p>7. Which loop is guaranteed to execute at least once?</p>
+        <input type="radio" id="for" name="BJquiz7" value="for"><label>for</label>
+        <input type="radio" id="while" name="BJquiz7" value="while"><label>while</label>
+        <input type="radio" id=" do-while" name="BJquiz7" value="do-while"><label> do-while</label>
+        <input type="radio" id="switch" name="BJquiz7" value="switch"><label>switch</label>
+         <br><hr>
+        
+        <p>8. Which keyword is used to inherit a class?</p>
+        <input type="radio" id="implements" name="BJquiz8" value="implements"><label>implements</label>
+        <input type="radio" id="inherits" name="BJquiz8" value="inherits"><label>inherits</label>
+        <input type="radio" id="extends" name="BJquiz8" value="extends"><label>extends</label>
+        <input type="radio" id="super" name="BJquiz8" value="super"><label>super</label>
+         <br><hr>
+        
+        <p>9. Java follows which programming paradigm?</p>
+        <input type="radio" id="Procedural" name="BJquiz9" value="Procedural"><label>Procedural</label>
+        <input type="radio" id="OOP" name="BJquiz9" value="OOP"><label>OOP</label>
+        <input type="radio" id="Functional" name="BJquiz9" value="Functional"><label>Functional</label>
+        <input type="radio" id="Scripting" name="BJquiz9" value="Scripting"><label>Scripting</label>
+       
+          <br><hr>
+        <p>10. Which one is used to stop a loop?</p>
+        <input type="radio" id="stop" name="BJquiz10" value="stop"><label>stop</label>
+        <input type="radio" id="break" name="BJquiz10" value="break"><label>break</label>
+        <input type="radio" id="return" name="BJquiz10" value="return"><label>return</label>
+        <input type="radio" id="exit" name="BJquiz10" value="exit"><label>exit</label>
+         
+        <div class="submitdiv">
+            <button class="submitbutton" onclick="result()">Submit</button>
+        </div>      
+        
+    </div>
+</body>
+ <script>
+    function result() {
+      const correctAnswers = {
+        BJquiz1: "class",
+        BJquiz2: "false",
+        BJquiz3: "String",
+        BJquiz4: "main",
+        BJquiz5: "new",
+        BJquiz6: "private",
+        BJquiz7: "do-while",
+        BJquiz8: "extends",
+        BJquiz9: "OOP",
+        BJquiz10: "break",
+      };
+
+      let score = 0;
+      let total = Object.keys(correctAnswers).length;
+
+      for (let key in correctAnswers) {
+        const selected = document.querySelector(`input[name="${key}"]:checked`);
+        if (selected && selected.value === correctAnswers[key]) {
+          score++;
+        }
+      }
+
+      alert(`You got ${score} out of ${total} correct!`);
+    }
+  </script>
+</html>

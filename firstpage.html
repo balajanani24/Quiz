@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programming Language </title>
+  <style>
+    body {
+      background-color: #f9f9f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(4, 160px);
+      grid-gap: 40px;
+    }
+    
+
+    .box {
+      background-color: #6cc024;
+      color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 160px;
+      border-radius: 16px;
+      box-shadow: 0 0 0 4px #d4f121;
+      text-align: center;
+      font-size: 16px;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 0.6s forwards;
+    }
+
+
+    /* Animations will stagger */
+    .box:nth-child(1) { animation-delay: 0.1s; }
+    .box:nth-child(2) { animation-delay: 0.2s; }
+    .box:nth-child(3) { animation-delay: 0.3s; }
+    .box:nth-child(4) { animation-delay: 0.4s; }
+    .box:nth-child(5) { animation-delay: 0.5s; }
+    .box:nth-child(6) { animation-delay: 0.6s; }
+    .box:nth-child(7) { animation-delay: 0.7s; }
+    .box:nth-child(8) { animation-delay: 0.8s; }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <a href="pythonS.html"><div class="box">python</div></a>
+    <a href="CS.html"> <div class="box">C</div></a>
+    <a href="cplusS.html"><div class="box">C++</div></a>
+    <a href="javascript.html"><div class="box">java script</div></a>
+    <a href="java.html"> <div class="box">java</div></a>
+    <a href="htmlcssS.html"><div class="box">html&amp;css</div></a>
+    <a href="typescript.html"><div class="box">type script</div></a>
+    <a href="RS.html"><div class="box">R</div></a>   
+   
+  </div>
+</body>
+</html>

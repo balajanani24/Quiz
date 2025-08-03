@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TypeScript Intermediate Quiz</title>
+  <style>
+    h1 {
+      text-align: center;
+    }
+    .questionspace {
+      position: relative;
+      width: 800px;
+      left: 220px;
+      background-color: rgb(145, 145, 145);
+      height: 450px;
+      overflow-x: auto;
+      padding: 10px;
+    }
+    .submitbutton {
+      position: absolute;
+      height: 1cm;
+      width: 5cm;
+      background-color: brown;
+      margin-top: 30px;
+      top: 1400px;
+      left: 200px;
+      border-style: solid;
+      border-color: crimson;
+      border-radius: 20px;
+      cursor: pointer;
+      color: white;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+    .submitbutton:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>TypeScript Intermediate Level</h1>
+  </div>
+
+  <div class="questionspace">
+    <p>1. What does this generic function signature mean? <code>function identity<T>(arg: T): T;</code></p>
+    <input type="radio" name="quiz1" value="Returns a value of type T passed as argument"><label>Returns a value of type T passed as argument</label><br/>
+    <input type="radio" name="quiz1" value="Returns a string"><label>Returns a string</label><br/>
+    <input type="radio" name="quiz1" value="Returns any"><label>Returns any</label><br/>
+    <input type="radio" name="quiz1" value="Returns void"><label>Returns void</label>
+    <br><hr>
+
+    <p>2. Which operator is used to combine types into a union type?</p>
+    <input type="radio" name="quiz2" value="&"><label>&amp;</label><br/>
+    <input type="radio" name="quiz2" value="|"><label>|</label><br/>
+    <input type="radio" name="quiz2" value="+"><label>+</label><br/>
+    <input type="radio" name="quiz2" value="&&"><label>&amp;&amp;</label>
+    <br><hr>
+
+    <p>3. What is a type guard in TypeScript?</p>
+    <input type="radio" name="quiz3" value="A function that checks the type of a variable at runtime"><label>A function that checks the type of a variable at runtime</label><br/>
+    <input type="radio" name="quiz3" value="A compile-time error"><label>A compile-time error</label><br/>
+    <input type="radio" name="quiz3" value="An interface"><label>An interface</label><br/>
+    <input type="radio" name="quiz3" value="A variable declaration"><label>A variable declaration</label>
+    <br><hr>
+
+    <p>4. What does the 'never' type signify?</p>
+    <input type="radio" name="quiz4" value="Function returns no value"><label>Function returns no value</label><br/>
+    <input type="radio" name="quiz4" value="A type that represents values that never occur"><label>A type that represents values that never occur</label><br/>
+    <input type="radio" name="quiz4" value="Any type"><label>Any type</label><br/>
+    <input type="radio" name="quiz4" value="Null type"><label>Null type</label>
+    <br><hr>
+
+    <p>5. What does this TypeScript code do?<br/><code>type Point = { x: number; y: number };</code></p>
+    <input type="radio" name="quiz5" value="Defines a function"><label>Defines a function</label><br/>
+    <input type="radio" name="quiz5" value="Defines a type alias for an object with x and y numbers"><label>Defines a type alias for an object with x and y numbers</label><br/>
+    <input type="radio" name="quiz5" value="Defines an interface"><label>Defines an interface</label><br/>
+    <input type="radio" name="quiz5" value="Defines a variable"><label>Defines a variable</label>
+    <br><hr>
+
+    <p>6. Which utility type makes all properties of an interface optional?</p>
+    <input type="radio" name="quiz6" value="Partial"><label>Partial</label><br/>
+    <input type="radio" name="quiz6" value="Readonly"><label>Readonly</label><br/>
+    <input type="radio" name="quiz6" value="Required"><label>Required</label><br/>
+    <input type="radio" name="quiz6" value="Pick"><label>Pick</label>
+    <br><hr>
+
+    <p>7. How do you declare a tuple of [string, number]?</p>
+    <input type="radio" name="quiz7" value="let tuple: [string, number];"><label>let tuple: [string, number];</label><br/>
+    <input type="radio" name="quiz7" value="let tuple: (string, number);"><label>let tuple: (string, number);</label><br/>
+    <input type="radio" name="quiz7" value="let tuple: array<string, number>;"><label>let tuple: array&lt;string, number&gt;;</label><br/>
+    <input type="radio" name="quiz7" value="let tuple: [number, string];"><label>let tuple: [number, string];</label>
+    <br><hr>
+
+    <p>8. What does this do? <code>enum Color {Red, Green, Blue}</code></p>
+    <input type="radio" name="quiz8" value="Declares a class named Color"><label>Declares a class named Color</label><br/>
+    <input type="radio" name="quiz8" value="Declares a function named Color"><label>Declares a function named Color</label><br/>
+    <input type="radio" name="quiz8" value="Declares an enum with Red=0, Green=1, Blue=2"><label>Declares an enum with Red=0, Green=1, Blue=2</label><br/>
+    <input type="radio" name="quiz8" value="Declares a variable Color"><label>Declares a variable Color</label>
+    <br><hr>
+
+    <p>9. What does the 'as' keyword do in TypeScript?</p>
+    <input type="radio" name="quiz9" value="Declares a variable"><label>Declares a variable</label><br/>
+    <input type="radio" name="quiz9" value="Type assertion (casting)"><label>Type assertion (casting)</label><br/>
+    <input type="radio" name="quiz9" value="Imports a module"><label>Imports a module</label><br/>
+    <input type="radio" name="quiz9" value="Defines a function"><label>Defines a function</label>
+    <br><hr>
+
+    <p>10. What does this mean? <code>function foo(x: string | number) {}</code></p>
+    <input type="radio" name="quiz10" value="x can be string or number"><label>x can be string or number</label><br/>
+    <input type="radio" name="quiz10" value="x is always string"><label>x is always string</label><br/>
+    <input type="radio" name="quiz10" value="x is always number"><label>x is always number</label><br/>
+    <input type="radio" name="quiz10" value="x can only be null"><label>x can only be null</label>
+    <br><hr>
+
+    <div class="submitdiv">
+      <button class="submitbutton" onclick="result()">Submit</button>
+    </div>
+  </div>
+
+  <script>
+    function result() {
+      const correctAnswers = {
+        quiz1: "Returns a value of type T passed as argument",
+        quiz2: "|",
+        quiz3: "A function that checks the type of a variable at runtime",
+        quiz4: "A type that represents values that never occur",
+        quiz5: "Defines a type alias for an object with x and y numbers",
+        quiz6: "Partial",
+        quiz7: "let tuple: [string, number];",
+        quiz8: "Declares an enum with Red=0, Green=1, Blue=2",
+        quiz9: "Type assertion (casting)",
+        quiz10: "x can be string or number"
+      };
+
+      let score = 0;
+      let total = Object.keys(correctAnswers).length;
+
+      for (let key in correctAnswers) {
+        const selected = document.querySelector(`input[name="${key}"]:checked`);
+        if (selected && selected.value === correctAnswers[key]) {
+          score++;
+        }
+      }
+
+      alert(`You got ${score} out of ${total} correct!`);
+    }
+  </script>
+</body>
+</html>

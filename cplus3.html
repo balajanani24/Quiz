@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> C++ Hard Quiz</title>
+             <style>
+      h1 {
+        text-align: center;
+      }
+      .questionspace {
+        position: relative;
+        width: 800px;
+        left: 220px;
+        background-color: rgb(145, 145, 145);
+        height: 450px;
+        overflow-x: auto;
+        padding: 10px;
+      }
+      .submitbutton {
+        position: absolute;
+        height: 1cm;
+        width: 5cm;
+        background-color: brown;
+        margin-top: 30px;
+        top: 800px;
+        left: 200px;
+        border-style: solid;
+        border-color: crimson;
+        border-radius: 20px;
+      }
+      .submitbutton:hover {
+        transform: scale(1.05);
+      }
+    </style>
+</head>
+<body>
+    <div>
+        <h1> C++ Hard Level</h1>
+    </div>
+    <div class="questionspace">
+        <p>1. Which STL component uses key-value pair?</p>
+        <input type="radio" id="vector" name="HCPquiz1" value="vector"><label>vector</label>
+        <input type="radio" id="map" name="HCPquiz1" value="map"><label>map</label>
+        <input type="radio" id="queue" name="HCPquiz1" value="queue"><label>queue</label>
+        <input type="radio" id="list" name="HCPquiz1" value="list"><label>list</label>
+       
+          <br><hr>
+        <p>2. Which container maintains order of insertion?</p>
+        <input type="radio" id="set" name="HCPquiz2" value="set"><label>set</label>
+        <input type="radio" id="map" name="HCPquiz2" value="map"><label>map</label>
+        <input type="radio" id="unordered_map" name="HCPquiz2" value="unordered_map"><label>unordered_map</label>
+        <input type="radio" id="vector" name="HCPquiz2" value="vector"><label>vector</label>
+         <br><hr>
+        
+        <p>3. Which container supports LIFO?</p>
+        <input type="radio" id="stack" name="HCPquiz3" value="stack"><label>stack</label>
+        <input type="radio" id="queue" name="HCPquiz3" value="queue"><label>queue</label>
+        <input type="radio" id="list" name="HCPquiz3" value="list"><label>list</label>
+        <input type="radio" id="set" name="HCPquiz3" value="set"><label>set</label>
+       
+          <br><hr>
+        <p>4. Which function removes the last element of vector?</p>
+        <input type="radio" id="delete" name="HCPquiz4" value="delete"><label>delete</label>
+        <input type="radio" id="remove" name="HCPquiz4" value="remove"><label>remove</label>
+        <input type="radio" id="pop_back" name="HCPquiz4" value="pop_back"><label>pop_back</label>
+        <input type="radio" id="clear" name="HCPquiz4" value="clear"><label>clear</label>
+       
+          <br><hr>
+        <p>5. What is the output type of std::accumulate?</p>
+        <input type="radio" id="int" name="HCPquiz5" value="int"><label>int</label>
+        <input type="radio" id="Depends" name="HCPquiz5" value="Depends"><label>Depends on initial value</label>
+        <input type="radio" id="long" name="HCPquiz5" value="long"><label>long</label>
+        <input type="radio" id="float" name="HCPquiz5" value="float"><label>float</label>
+         <br><hr>
+        
+        <p>6. Which iterator can be used for reverse traversal?</p>
+        <input type="radio" id="bidirectional" name="HCPquiz6" value="bidirectional"><label>bidirectional</label>
+        <input type="radio" id="forward" name="HCPquiz6" value="forward"><label>forward</label>
+        <input type="radio" id="random" name="HCPquiz6" value="">random<label>random</label>
+        <input type="radio" id="reverse" name="HCPquiz6" value="reverse"><label>reverse</label>
+       
+          <br><hr>
+        <p>7. What is noexcept used for?</p>
+        <input type="radio" id="Memory" name="HCPquiz7" value="Memory"><label>Memory</label>
+        <input type="radio" id="Exception" name="HCPquiz7" value="Exception"><label>Exception guarantee</label>
+        <input type="radio" id="Compilation" name="HCPquiz7" value="Compilation"><label>Compilation</label>
+        <input type="radio" id="Type" name="HCPquiz7" value="Type"><label> Type deduction</label>
+         <br><hr>
+        
+        <p>8. What kind of inheritance can lead to Diamond problem?</p>
+        <input type="radio" id="Single" name="HCPquiz8" value="Single"><label>Single</label>
+        <input type="radio" id="Multilevel" name="HCPquiz8" value="Multilevel"><label>Multilevel</label>
+        <input type="radio" id="Multiple" name="HCPquiz8" value="Multiple"><label>Multiple</label>
+        <input type="radio" id="Hybrid" name="HCPquiz8" value="Hybrid"><label>Hybrid</label>
+         <br><hr>
+        
+        <p>9. Which keyword is used to resolve Diamond problem?</p>
+        <input type="radio" id="virtual" name="HCPquiz9" value="virtual"><label>virtual</label>
+        <input type="radio" id="static" name="HCPquiz9" value="static"><label>static</label>
+        <input type="radio" id="dynamic" name="HCPquiz9" value="dynamic"><label>dynamic</label>
+        <input type="radio" id="protected" name="HCPquiz9" value="protected"><label>protected</label>
+       
+          <br><hr>
+        <p>10. Which STL container supports associative access?</p>
+        <input type="radio" id="map" name="HCPquiz10" value="map"><label>map</label>
+        <input type="radio" id="vector" name="HCPquiz10" value="vector"><label>vector</label>
+        <input type="radio" id="list" name="HCPquiz10" value="list"><label>list</label>
+        <input type="radio" id="array" name="HCPquiz10" value="array"><label>array</label>
+         
+        <div class="submitdiv">
+            <button class="submitbutton" onclick="result()">Submit</button>
+        </div>      
+        
+    </div>
+</body>
+ <script>
+    function result() {
+      const correctAnswers = {
+        HCPquiz1: "map",
+        HCPquiz2: "vector",
+        HCPquiz3: "stack",
+        HCPquiz4: "pop_back",
+        HCPquiz5: "Depends",
+        HCPquiz6: "reverse",
+        HCPquiz7: "Exception",
+        HCPquiz8: "Multiple",
+        HCPquiz9: "virtual",
+        HCPquiz10: "map",
+      };
+
+      let score = 0;
+      let total = Object.keys(correctAnswers).length;
+
+      for (let key in correctAnswers) {
+        const selected = document.querySelector(`input[name="${key}"]:checked`);
+        if (selected && selected.value === correctAnswers[key]) {
+          score++;
+        }
+      }
+
+      alert(`You got ${score} out of ${total} correct!`);
+    }
+  </script>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JavaScript Basic Quiz</title>
+  <style>
+    h1 {
+      text-align: center;
+    }
+    .questionspace {
+      position: relative;
+      width: 800px;
+      left: 220px;
+      background-color: rgb(145, 145, 145);
+      height: 450px;
+      overflow-x: auto;
+      padding: 10px;
+    }
+    .submitbutton {
+      position: absolute;
+      height: 1cm;
+      width: 5cm;
+      background-color: brown;
+      margin-top: 30px;
+      top: 800px;
+      left: 200px;
+      border-style: solid;
+      border-color: crimson;
+      border-radius: 20px;
+    }
+    .submitbutton:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>JavaScript Basic Level</h1>
+  </div>
+
+  <div class="questionspace">
+    <p>1. What keyword is used to declare a variable in JavaScript?</p>
+    <input type="radio" name="quiz1" value="var" /><label>var</label>
+    <input type="radio" name="quiz1" value="define" /><label>define</label>
+    <input type="radio" name="quiz1" value="dim" /><label>dim</label>
+    <input type="radio" name="quiz1" value="set" /><label>set</label>
+    <br><hr>
+
+    <p>2. What does `typeof null` return?</p>
+    <input type="radio" name="quiz2" value="null" /><label>null</label>
+    <input type="radio" name="quiz2" value="object" /><label>object</label>
+    <input type="radio" name="quiz2" value="undefined" /><label>undefined</label>
+    <input type="radio" name="quiz2" value="boolean" /><label>boolean</label>
+    <br><hr>
+
+    <p>3. Which symbol is used for single-line comments?</p>
+    <input type="radio" name="quiz3" value="//" /><label>//</label>
+    <input type="radio" name="quiz3" value="/*" /><label>/*</label>
+    <input type="radio" name="quiz3" value="#" /><label>#</label>
+    <input type="radio" name="quiz3" value="--" /><label>--</label>
+    <br><hr>
+
+    <p>4. What is the correct syntax to call a function named <code>myFunc</code>?</p>
+    <input type="radio" name="quiz4" value="call myFunc()" /><label>call myFunc()</label>
+    <input type="radio" name="quiz4" value="myFunc()" /><label>myFunc()</label>
+    <input type="radio" name="quiz4" value="run myFunc" /><label>run myFunc</label>
+    <input type="radio" name="quiz4" value="myFunc.run()" /><label>myFunc.run()</label>
+    <br><hr>
+
+    <p>5. Which operator checks both value and type?</p>
+    <input type="radio" name="quiz5" value="==" /><label>==</label>
+    <input type="radio" name="quiz5" value="=" /><label>=</label>
+    <input type="radio" name="quiz5" value="===" /><label>===</label>
+    <input type="radio" name="quiz5" value="!=" /><label>!=</label>
+    <br><hr>
+
+    <p>6. Which method adds an item to the end of an array?</p>
+    <input type="radio" name="quiz6" value="push()" /><label>push()</label>
+    <input type="radio" name="quiz6" value="add()" /><label>add()</label>
+    <input type="radio" name="quiz6" value="append()" /><label>append()</label>
+    <input type="radio" name="quiz6" value="insert()" /><label>insert()</label>
+    <br><hr>
+
+    <p>7. What will <code>console.log('5' + 3)</code> print?</p>
+    <input type="radio" name="quiz7" value="8" /><label>8</label>
+    <input type="radio" name="quiz7" value="53" /><label>53</label>
+    <input type="radio" name="quiz7" value="error" /><label>error</label>
+    <input type="radio" name="quiz7" value="undefined" /><label>undefined</label>
+    <br><hr>
+
+    <p>8. Which of the following is a JavaScript framework?</p>
+    <input type="radio" name="quiz8" value="Laravel" /><label>Laravel</label>
+    <input type="radio" name="quiz8" value="Django" /><label>Django</label>
+    <input type="radio" name="quiz8" value="React" /><label>React</label>
+    <input type="radio" name="quiz8" value="Flask" /><label>Flask</label>
+    <br><hr>
+
+    <p>9. How do you write a conditional statement in JavaScript?</p>
+    <input type="radio" name="quiz9" value="if i = 5" /><label>if i = 5</label>
+    <input type="radio" name="quiz9" value="if i == 5 then" /><label>if i == 5 then</label>
+    <input type="radio" name="quiz9" value="if (i === 5)" /><label>if (i === 5)</label>
+    <input type="radio" name="quiz9" value="if i := 5" /><label>if i := 5</label>
+    <br><hr>
+
+    <p>10. What is the result of <code>typeof NaN</code>?</p>
+    <input type="radio" name="quiz10" value="number" /><label>number</label>
+    <input type="radio" name="quiz10" value="NaN" /><label>NaN</label>
+    <input type="radio" name="quiz10" value="undefined" /><label>undefined</label>
+    <input type="radio" name="quiz10" value="float" /><label>float</label>
+    <br><hr>
+
+    <div class="submitdiv">
+      <button class="submitbutton" onclick="result()">Submit</button>
+    </div>
+  </div>
+
+  <script>
+    function result() {
+      const correctAnswers = {
+        quiz1: "var",
+        quiz2: "object",
+        quiz3: "//",
+        quiz4: "myFunc()",
+        quiz5: "===",
+        quiz6: "push()",
+        quiz7: "53",
+        quiz8: "React",
+        quiz9: "if (i === 5)",
+        quiz10: "number",
+      };
+
+      let score = 0;
+      let total = Object.keys(correctAnswers).length;
+
+      for (let key in correctAnswers) {
+        const selected = document.querySelector(`input[name="${key}"]:checked`);
+        if (selected && selected.value === correctAnswers[key]) {
+          score++;
+        }
+      }
+
+      alert(`You got ${score} out of ${total} correct!`);
+    }
+  </script>
+</body>
+</html>

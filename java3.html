@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Hard Quiz</title>
+             <style>
+      h1 {
+        text-align: center;
+      }
+      .questionspace {
+        position: relative;
+        width: 800px;
+        left: 220px;
+        background-color: rgb(145, 145, 145);
+        height: 450px;
+        overflow-x: auto;
+        padding: 10px;
+      }
+      .submitbutton {
+        position: absolute;
+        height: 1cm;
+        width: 5cm;
+        background-color: brown;
+        margin-top: 30px;
+        top: 800px;
+        left: 200px;
+        border-style: solid;
+        border-color: crimson;
+        border-radius: 20px;
+      }
+      .submitbutton:hover {
+        transform: scale(1.05);
+      }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Java Hard Level</h1>
+    </div>
+    <div class="questionspace">
+        <p>1. Which class handles large integers in Java?</p>
+        <input type="radio" name="HJquiz1" value="Integer"><label>Integer</label>
+        <input type="radio" name="HJquiz1" value="BigInt"><label>BigInt</label>
+        <input type="radio" name="HJquiz1" value="BigInteger"><label>BigInteger</label>
+        <input type="radio" name="HJquiz1" value="Long"><label>Long</label>
+        <br><hr>
+
+        <p>2. What is the superclass of all exceptions?</p>
+        <input type="radio" name="HJquiz2" value="Throwable"><label>Throwable</label>
+        <input type="radio" name="HJquiz2" value="Error"><label>Error</label>
+        <input type="radio" name="HJquiz2" value="Exception"><label>Exception</label>
+        <input type="radio" name="HJquiz2" value="RuntimeException"><label>RuntimeException</label>
+        <br><hr>
+
+        <p>3. Which feature supports method calls at runtime?</p>
+        <input type="radio" name="HJquiz3" value="Static binding"><label>Static binding</label>
+        <input type="radio" name="HJquiz3" value="Late binding"><label>Late binding</label>
+        <input type="radio" name="HJquiz3" value="Runtime resolution"><label>Runtime resolution</label>
+        <input type="radio" name="HJquiz3" value="Dynamic binding"><label>Dynamic binding</label>
+        <br><hr>
+
+        <p>4. Which Java keyword is not allowed for local variables?</p>
+        <input type="radio" name="HJquiz4" value="final"><label>final</label>
+        <input type="radio" name="HJquiz4" value="abstract"><label>abstract</label>
+        <input type="radio" name="HJquiz4" value="static"><label>static</label>
+        <input type="radio" name="HJquiz4" value="transient"><label>transient</label>
+        <br><hr>
+
+        <p>5. Which collection class is thread-safe for reading?</p>
+        <input type="radio" name="HJquiz5" value="ArrayList"><label>ArrayList</label>
+        <input type="radio" name="HJquiz5" value="LinkedList"><label>LinkedList</label>
+        <input type="radio" name="HJquiz5" value="Vector"><label>Vector</label>
+        <input type="radio" name="HJquiz5" value="CopyOnWriteArrayList"><label>CopyOnWriteArrayList</label>
+        <br><hr>
+
+        <p>6. What does the `volatile` keyword ensure?</p>
+        <input type="radio" name="HJquiz6" value="Thread termination"><label>Thread termination</label>
+        <input type="radio" name="HJquiz6" value="Memory consistency"><label>Memory consistency</label>
+        <input type="radio" name="HJquiz6" value="Optimization"><label>Optimization</label>
+        <input type="radio" name="HJquiz6" value="Exception handling"><label>Exception handling</label>
+        <br><hr>
+
+        <p>7. Which method notifies all waiting threads?</p>
+        <input type="radio" name="HJquiz7" value="notify"><label>notify()</label>
+        <input type="radio" name="HJquiz7" value="sleep"><label>sleep()</label>
+        <input type="radio" name="HJquiz7" value="notifyAll"><label>notifyAll()</label>
+        <input type="radio" name="HJquiz7" value="wake"><label>wake()</label>
+        <br><hr>
+
+        <p>8. Which annotation is used with lambda expressions?</p>
+        <input type="radio" name="HJquiz8" value="@Lambda"><label>@Lambda</label>
+        <input type="radio" name="HJquiz8" value="@FunctionalInterface"><label>@FunctionalInterface</label>
+        <input type="radio" name="HJquiz8" value="@Override"><label>@Override</label>
+        <input type="radio" name="HJquiz8" value="@Expression"><label>@Expression</label>
+        <br><hr>
+
+        <p>9. What does `instanceof` check?</p>
+        <input type="radio" name="HJquiz9" value="Class existence"><label>Class existence</label>
+        <input type="radio" name="HJquiz9" value="Inheritance"><label>Inheritance</label>
+        <input type="radio" name="HJquiz9" value="Object type"><label>Object type</label>
+        <input type="radio" name="HJquiz9" value="Method type"><label>Method type</label>
+        <br><hr>
+
+        <p>10. Which Java version introduced lambda expressions?</p>
+        <input type="radio" name="HJquiz10" value="Java 6"><label>Java 6</label>
+        <input type="radio" name="HJquiz10" value="Java 7"><label>Java 7</label>
+        <input type="radio" name="HJquiz10" value="Java 8"><label>Java 8</label>
+        <input type="radio" name="HJquiz10" value="Java 9"><label>Java 9</label>
+        <br><hr>
+
+        <div class="submitdiv">
+            <button class="submitbutton" onclick="result()">Submit</button>
+        </div>
+    </div>
+</body>
+
+ <script>
+    function result() {
+      const correctAnswers = {
+        HJquiz1: "BigInteger",
+        HJquiz2: "Throwable",
+        HJquiz3: "Dynamic binding",
+        HJquiz4: "static",
+        HJquiz5: "CopyOnWriteArrayList",
+        HJquiz6: "Memory consistency",
+        HJquiz7: "notifyAll",
+        HJquiz8: "@FunctionalInterface",
+        HJquiz9: "Object type",
+        HJquiz10: "Java 8",
+      };
+
+      let score = 0;
+      let total = Object.keys(correctAnswers).length;
+
+      for (let key in correctAnswers) {
+        const selected = document.querySelector(`input[name="${key}"]:checked`);
+        if (selected && selected.value === correctAnswers[key]) {
+          score++;
+        }
+      }
+
+      alert(`You got ${score} out of ${total} correct!`);
+    }
+  </script>
+</html>

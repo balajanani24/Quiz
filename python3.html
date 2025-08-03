@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Hard Quiz</title>
+       <style>
+      h1 {
+        text-align: center;
+      }
+      .questionspace {
+        position: relative;
+        width: 800px;
+        left: 220px;
+        background-color: rgb(145, 145, 145);
+        height: 450px;
+        overflow-x: auto;
+        padding: 10px;
+      }
+      .submitbutton {
+        position: absolute;
+        height: 1cm;
+        width: 5cm;
+        background-color: brown;
+        margin-top: 30px;
+        top: 800px;
+        left: 200px;
+        border-style: solid;
+        border-color: crimson;
+        border-radius: 20px;
+      }
+      .submitbutton:hover {
+        transform: scale(1.05);
+      }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Python Hard level</h1>
+    </div>
+    <div class="questionspace">
+        <p>1. What is the purpose of __init__ in a class?</p>
+        <input type="radio" id="Destructor" name="HPquiz1" value="Destructor"><label>Destructor</label>
+        <input type="radio" id="Copyconstructor" name="HPquiz1" value="Copyconstructor"><label>Copy constructor</label>
+        <input type="radio" id="Constructor" name="HPquiz1" value="Constructor"><label>Constructor</label>
+        <input type="radio" id="Staticmethod" name="HPquiz1" value="Staticmethod"><label>Static method</label>
+       <br><hr>
+        
+        <p>2. What is the result of True + True + False?</p>
+        <input type="radio" id="True" name="HPquiz2" value="True"><label>True</label>
+        <input type="radio" id="one" name="HPquiz2" value="one"><label>1</label>
+        <input type="radio" id="two" name="HPquiz2" value="two"><label>2</label>
+        <input type="radio" id="Error" name="HPquiz2" value="Error"><label>Error</label>
+       <br><hr>
+        
+        <p>3. What is the output of isinstance("hello", str)?</p>
+        <input type="radio" id="False" name="HPquiz3" value="False"><label>False</label>
+        <input type="radio" id="True" name="HPquiz3" value="True"><label>True</label>
+        <input type="radio" id="true" name="HPquiz3" value="true"><label>"True"</label>
+        <input type="radio" id="Error" name="HPquiz3" value="Error"><label>Error</label>
+       
+        <br><hr>
+        <p>4. What does the with statement handle?</p>
+        <input type="radio" id="Loops" name="HPquiz4" value="Loops"><label>Loops</label>
+        <input type="radio" id="File" name="HPquiz4" value="File"><label>File or resource management </label>
+        <input type="radio" id=" Errorhandling" name="HPquiz4" value=" Errorhandling"><label> Error handling</label>
+        <input type="radio" id=" Memoryleak" name="HPquiz4" value=" Memoryleak"><label> Memory leak</label>
+       
+       <br><hr>
+        <p>5.Which is used to define an abstract method in Python?</p>
+        <input type="radio" id="abstractmethod" name="HPquiz5" value="abstractmethod"><label>abstractmethod()</label>
+        <input type="radio" id="defabstract" name="HPquiz5" value="defabstract"><label>defabstract()</label>
+        <input type="radio" id="interface" name="HPquiz5" value="interface"><label>@interface</label>
+        <input type="radio" id="baseclass" name="HPquiz5" value="baseclass"><label>baseclass()</label>
+       <br><hr>
+        
+        <p>6. What is the output of {} == set()?</p>
+        <input type="radio" id="True" name="HPquiz6" value="True"><label>True</label>
+        <input type="radio" id="False" name="HPquiz6" value="False"><label>False</label>
+        <input type="radio" id="None" name="HPquiz6" value="None"><label>None</label>
+        <input type="radio" id="Error" name="HPquiz6" value="Error"><label>Error</label>
+       <br><hr>
+    
+        <p>7. Which of these cannot be a dictionary key?</p>
+        <input type="radio" id="string" name="HPquiz7" value="string"><label>string</label>
+        <input type="radio" id="int" name="HPquiz7" value="int"><label>int</label>
+        <input type="radio" id="list" name="HPquiz7" value="list"><label>list</label>
+        <input type="radio" id="tuple" name="HPquiz7" value="tuple"><label>tuple</label>
+       <br><hr>
+        
+        <p>8. Which of these modules provides support for serialization in Python?</p>
+        <input type="radio" id="pickle" name="HPquiz8" value="pickle"><label>pickle</label>
+        <input type="radio" id="marshal" name="HPquiz8" value="marshal"><label>marshal</label>
+        <input type="radio" id="json" name="HPquiz8" value="json"><label>json</label>
+        <input type="radio" id="All" name="HPquiz8" value="All"><label> All of the above</label>
+       
+       <br><hr>
+        <p>9. Which keyword is used to create a generator in Python?</p>
+        <input type="radio" id="yield" name="HPquiz9" value="yield"><label>yield</label>
+        <input type="radio" id="return" name="HPquiz9" value="return"><label>return</label>
+        <input type="radio" id="generate" name="HPquiz9" value="generate"><label>generate</label>
+        <input type="radio" id="yieldfrom" name="HPquiz9" value="yieldfrom"><label>yieldfrom</label>
+       
+        <br><hr>
+        <p>10. Which error type is thrown when a local variable is referenced before assignment?</p>
+        <input type="radio" id="NameError" name="HPquiz10" value="NameError"><label>NameError</label>
+        <input type="radio" id="ValueError" name="HPquiz10" value="ValueError"><label>ValueError</label>
+        <input type="radio" id="UnboundLocalError" name="HPquiz10" value="UnboundLocalError"><label>UnboundLocalError</label>
+        <input type="radio" id="ReferenceError" name="HPquiz10" value="ReferenceError"><label>ReferenceError</label>
+       
+         
+          <div class="submitdiv">
+        <button class="submitbutton" onclick="result()">Submit</button>
+      </div>
+        
+  </div>
+</body>
+  <script>
+    function result() {
+      const correctAnswers = {
+        HPquiz1: "Constructor",
+        HPquiz2: "two",
+        HPquiz3: "True",
+        HPquiz4: "File",
+        HPquiz5: "abstractmethod",
+        HPquiz6: "False",
+        HPquiz7: "list",
+        HPquiz8: "pickle",
+        HPquiz9: "yield",
+        HPquiz10: "UnboundLocalError",
+      };
+
+      let score = 0;
+      let total = Object.keys(correctAnswers).length;
+
+      for (let key in correctAnswers) {
+        const selected = document.querySelector(`input[name="${key}"]:checked`);
+        if (selected && selected.value === correctAnswers[key]) {
+          score++;
+        }
+      }
+
+      alert(`You got ${score} out of ${total} correct!`);
+    }
+  </script>
+</html>

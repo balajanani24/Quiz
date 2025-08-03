@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TypeScript Hard Quiz</title>
+  <style>
+    h1 {
+      text-align: center;
+    }
+    .questionspace {
+      position: relative;
+      width: 800px;
+      left: 220px;
+      background-color: rgb(145, 145, 145);
+      height: 480px;
+      overflow-x: auto;
+      padding: 10px;
+    }
+    .submitbutton {
+      position: absolute;
+      height: 1.2cm;
+      width: 6cm;
+      background-color: #8B0000;
+      margin-top: 30px;
+      top: 1450px;
+      left: 200px;
+      border-style: solid;
+      border-color: crimson;
+      border-radius: 20px;
+      cursor: pointer;
+      color: white;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+    .submitbutton:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>TypeScript Hard Level</h1>
+  </div>
+
+  <div class="questionspace">
+    <p>1. What does this conditional type do?<br/><code>type NonNullable<T> = T extends null | undefined ? never : T;</code></p>
+    <input type="radio" name="quiz1" value="Removes null and undefined from T"><label>Removes null and undefined from T</label><br/>
+    <input type="radio" name="quiz1" value="Makes T nullable"><label>Makes T nullable</label><br/>
+    <input type="radio" name="quiz1" value="Converts T to never"><label>Converts T to never</label><br/>
+    <input type="radio" name="quiz1" value="Creates a union with never"><label>Creates a union with never</label>
+    <br><hr>
+
+    <p>2. How would you declare a mapped type that makes all properties of T readonly?</p>
+    <input type="radio" name="quiz2" value="type Readonly<T> = { readonly [P in keyof T]: T[P]; }"><label>type Readonly&lt;T&gt; = { readonly [P in keyof T]: T[P]; }</label><br/>
+    <input type="radio" name="quiz2" value="type Readonly<T> = { [P in keyof T]: T[P]; }"><label>type Readonly&lt;T&gt; = { [P in keyof T]: T[P]; }</label><br/>
+    <input type="radio" name="quiz2" value="type Readonly<T> = { readonly T: keyof P; }"><label>type Readonly&lt;T&gt; = { readonly T: keyof P; }</label><br/>
+    <input type="radio" name="quiz2" value="type Readonly<T> = T"><label>type Readonly&lt;T&gt; = T</label>
+    <br><hr>
+
+    <p>3. What is the purpose of the 'infer' keyword in TypeScript conditional types?</p>
+    <input type="radio" name="quiz3" value="To infer the type within a conditional type"><label>To infer the type within a conditional type</label><br/>
+    <input type="radio" name="quiz3" value="To declare a variable"><label>To declare a variable</label><br/>
+    <input type="radio" name="quiz3" value="To infer runtime values"><label>To infer runtime values</label><br/>
+    <input type="radio" name="quiz3" value="To import types"><label>To import types</label>
+    <br><hr>
+
+    <p>4. What does this decorator syntax do?<br/><code>@sealed class MyClass {}</code></p>
+    <input type="radio" name="quiz4" value="Prevents the class from being subclassed"><label>Prevents the class from being subclassed</label><br/>
+    <input type="radio" name="quiz4" value="Makes the class sealed for serialization"><label>Makes the class sealed for serialization</label><br/>
+    <input type="radio" name="quiz4" value="Marks the class for garbage collection"><label>Marks the class for garbage collection</label><br/>
+    <input type="radio" name="quiz4" value="Nothing, syntax error"><label>Nothing, syntax error</label>
+    <br><hr>
+
+    <p>5. What is the return type of this function?<br/><code>function foo<T extends U, U>(arg: T): U { return arg; }</code></p>
+    <input type="radio" name="quiz5" value="T extends U and returns U"><label>T extends U and returns U</label><br/>
+    <input type="radio" name="quiz5" value="Returns T"><label>Returns T</label><br/>
+    <input type="radio" name="quiz5" value="Returns any"><label>Returns any</label><br/>
+    <input type="radio" name="quiz5" value="Returns void"><label>Returns void</label>
+    <br><hr>
+
+    <p>6. What is the difference between 'interface' and 'type' in TypeScript?</p>
+    <input type="radio" name="quiz6" value="Interfaces can be merged, types cannot"><label>Interfaces can be merged, types cannot</label><br/>
+    <input type="radio" name="quiz6" value="Types can be merged, interfaces cannot"><label>Types can be merged, interfaces cannot</label><br/>
+    <input type="radio" name="quiz6" value="Both are identical"><label>Both are identical</label><br/>
+    <input type="radio" name="quiz6" value="Types are deprecated"><label>Types are deprecated</label>
+    <br><hr>
+
+    <p>7. How do you extract the return type of a function type <code>type Fn = (a: number) => string;</code>?</p>
+    <input type="radio" name="quiz7" value="type ReturnType<T> = T extends (...args: any[]) => infer R ? R : any;"><label>type ReturnType&lt;T&gt; = T extends (...args: any[]) => infer R ? R : any;</label><br/>
+    <input type="radio" name="quiz7" value="type ReturnType<T> = T;"> <label>type ReturnType&lt;T&gt; = T;</label><br/>
+    <input type="radio" name="quiz7" value="type ReturnType<T> = any;"><label>type ReturnType&lt;T&gt; = any;</label><br/>
+    <input type="radio" name="quiz7" value="type ReturnType<T> = string;"><label>type ReturnType&lt;T&gt; = string;</label>
+    <br><hr>
+
+    <p>8. What does this do?<br/><code>type Keys = keyof Person;</code></p>
+    <input type="radio" name="quiz8" value="Defines a new type Keys as union of keys of Person"><label>Defines a new type Keys as union of keys of Person</label><br/>
+    <input type="radio" name="quiz8" value="Extracts values from Person"><label>Extracts values from Person</label><br/>
+    <input type="radio" name="quiz8" value="Creates a variable Keys"><label>Creates a variable Keys</label><br/>
+    <input type="radio" name="quiz8" value="Defines a function Keys"><label>Defines a function Keys</label>
+    <br><hr>
+
+    <p>9. Which of these types represents a function that never returns?</p>
+    <input type="radio" name="quiz9" value="void"><label>void</label><br/>
+    <input type="radio" name="quiz9" value="never"><label>never</label><br/>
+    <input type="radio" name="quiz9" value="any"><label>any</label><br/>
+    <input type="radio" name="quiz9" value="unknown"><label>unknown</label>
+    <br><hr>
+
+    <p>10. What will happen if you try to assign <code>let x: number = "hello";</code>?</p>
+    <input type="radio" name="quiz10" value="Compile error"><label>Compile error</label><br/>
+    <input type="radio" name="quiz10" value="Runtime error"><label>Runtime error</label><br/>
+    <input type="radio" name="quiz10" value="Implicit conversion"><label>Implicit conversion</label><br/>
+    <input type="radio" name="quiz10" value="No error"><label>No error</label>
+    <br><hr>
+
+    <div class="submitdiv">
+      <button class="submitbutton" onclick="result()">Submit</button>
+    </div>
+  </div>
+
+  <script>
+    function result() {
+      const correctAnswers = {
+        quiz1: "Removes null and undefined from T",
+        quiz2: "type Readonly<T> = { readonly [P in keyof T]: T[P]; }",
+        quiz3: "To infer the type within a conditional type",
+        quiz4: "Prevents the class from being subclassed",
+        quiz5: "T extends U and returns U",
+        quiz6: "Interfaces can be merged, types cannot",
+        quiz7: "type ReturnType<T> = T extends (...args: any[]) => infer R ? R : any;",
+        quiz8: "Defines a new type Keys as union of keys of Person",
+        quiz9: "never",
+        quiz10: "Compile error"
+      };
+
+      let score = 0;
+      let total = Object.keys(correctAnswers).length;
+
+      for (let key in correctAnswers) {
+        const selected = document.querySelector(`input[name="${key}"]:checked`);
+        if (selected && selected.value === correctAnswers[key]) {
+          score++;
+        }
+      }
+
+      alert(`You got ${score} out of ${total} correct!`);
+    }
+  </script>
+</body>
+</html>

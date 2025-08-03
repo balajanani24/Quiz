@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> C Basic Quiz</title>
+      <style>
+      h1 {
+        text-align: center;
+      }
+      .questionspace {
+        position: relative;
+        width: 800px;
+        left: 220px;
+        background-color: rgb(145, 145, 145);
+        height: 450px;
+        overflow-x: auto;
+        padding: 10px;
+      }
+      .submitbutton {
+        position: absolute;
+        height: 1cm;
+        width: 5cm;
+        background-color: brown;
+        margin-top: 30px;
+        top: 800px;
+        left: 200px;
+        border-style: solid;
+        border-color: crimson;
+        border-radius: 20px;
+      }
+      .submitbutton:hover {
+        transform: scale(1.05);
+      }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>C Basic level</h1>
+    </div>
+    <div class="questionspace">
+        <p>1. Which header is needed for malloc()?</p>
+        <input type="radio" id="string" name="BCquiz1" value=" string"><label> string.h</label>
+        <input type="radio" id="malloc" name="BCquiz1" value="malloc"><label>malloc.h</label>
+        <input type="radio" id="stdlib" name="BCquiz1" value="stdlib"><label> stdlib.h</label>
+        <input type="radio" id="mem" name="BCquiz1" value="mem"><label>mem.h</label>
+       <br><hr>
+        
+        <p>2. Which is the entry point of a C program?</p>
+        <input type="radio" id="init" name="BCquiz2" value="init"><label>init()</label>
+        <input type="radio" id=" start" name="BCquiz2" value=" start"><label> start()</label>
+        <input type="radio" id=" begin" name="BCquiz2" value=" begin"><label> begin()</label>
+        <input type="radio" id="main" name="BCquiz2" value="main"><label>main()</label>
+       <br><hr>
+        
+        <p>3. Which keyword ends a switch case?</p>
+        <input type="radio" id="break" name="BCquiz3" value="break"><label>break</label>
+        <input type="radio" id="exit" name="BCquiz3" value="exit"><label>exit</label>
+        <input type="radio" id="end" name="BCquiz3" value="end"><label>end</label>
+        <input type="radio" id="return" name="BCquiz3" value="return"><label>return</label>
+       <br><hr>
+        
+        <p>4. Which of these is not a storage class?</p>
+        <input type="radio" id="auto" name="BCquiz4" value="auto"><label>auto</label>
+        <input type="radio" id="extern" name="BCquiz4" value="extern"><label>extern</label>
+        <input type="radio" id="static" name="BCquiz4" value="static"><label>static</label>
+        <input type="radio" id="final" name="BCquiz4" value="final"><label>final</label>
+       <br><hr>
+        
+        <p>5. Which keyword skips current iteration?</p>
+        <input type="radio" id="break" name="BCquiz5" value="break"><label>break</label>
+        <input type="radio" id="end" name="BCquiz5" value="end"><label>end</label>
+        <input type="radio" id="skip" name="BCquiz5" value="skip"><label>skip</label>
+        <input type="radio" id="continue" name="BCquiz5" value="continue"><label>continue</label>
+       
+        <br><hr>
+        <p>6. Who developed C language?</p>
+        <input type="radio" id="JamesGosling" name="BCquiz6" value="JamesGosling"><label>James Gosling</label>
+        <input type="radio" id="DennisRitchie" name="BCquiz6" value="DennisRitchie"><label>Dennis Ritchie</label>
+        <input type="radio" id=" KenThompson" name="BCquiz6" value=" KenThompson"><label> Ken Thompson</label>
+        <input type="radio" id="BjarneStroustrup" name="BCquiz6" value="BjarneStroustrup"><label>Bjarne Stroustrup</label>
+       <br><hr>
+        
+        <p>7. Which function is used to display output?</p>
+        <input type="radio" id="write" name="BCquiz7" value="write"><label>write()</label>
+        <input type="radio" id="print" name="BCquiz7" value="print"><label> print()</label>
+        <input type="radio" id="output" name="BCquiz7" value="output"><label>output()</label>
+        <input type="radio" id="printf" name="BCquiz7" value="printf"><label>printf()</label>
+       
+        <br><hr>
+        <p>8. Which is a correct keyword in C?</p>
+        <input type="radio" id="function" name="BCquiz8" value="function"><label>function</label>
+        <input type="radio" id="define" name="BCquiz8" value="define"><label>define</label>
+        <input type="radio" id="int" name="BCquiz8" value="int"><label>int</label>
+        <input type="radio" id="declare" name="BCquiz8" value="declare"><label>declare</label>
+       <br><hr>
+        
+        <p>9. Which data type is used to store real numbers?</p>
+        <input type="radio" id="int" name="BCquiz9" value="int"><label>int</label>
+        <input type="radio" id="char" name="BCquiz9" value="char"><label>char</label>
+        <input type="radio" id="float" name="BCquiz9" value="float"><label>float</label>
+        <input type="radio" id="void" name="BCquiz9" value="void"><label>void</label>
+       <br><hr>
+        
+        <p>10. Which keyword declares a constant?</p>
+        <input type="radio" id="define" name="BCquiz10" value="define"><label>define</label>
+        <input type="radio" id="constant" name="BCquiz10" value="constant"><label>constant</label>
+        <input type="radio" id="const" name="BCquiz10" value="const"><label>const</label>
+        <input type="radio" id="fixed" name="BCquiz10" value="fixed"><label>fixed</label>
+       
+      <div class="submitdiv">
+        <button class="submitbutton" onclick="result()">Submit</button>
+      </div>
+    </div>
+</body>
+  <script>
+    function result() {
+      const correctAnswers = {
+        BCquiz1: "stdlib",
+        BCquiz2: "main",
+        BCquiz3: "break",
+        BCquiz4: "final",
+        BCquiz5: "continue",
+        BCquiz6: "DennisRitchie",
+        BCquiz7: "printf",
+        BCquiz8: "int",
+        BCquiz9: "float",
+        BCquiz10: "const",
+      };
+
+      let score = 0;
+      let total = Object.keys(correctAnswers).length;
+
+      for (let key in correctAnswers) {
+        const selected = document.querySelector(`input[name="${key}"]:checked`);
+        if (selected && selected.value === correctAnswers[key]) {
+          score++;
+        }
+      }
+
+      alert(`You got ${score} out of ${total} correct!`);
+    }
+  </script>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Hard Quiz</title>
+             <style>
+      h1 {
+        text-align: center;
+      }
+      .questionspace {
+        position: relative;
+        width: 800px;
+        left: 220px;
+        background-color: rgb(145, 145, 145);
+        height: 450px;
+        overflow-x: auto;
+        padding: 10px;
+      }
+      .submitbutton {
+        position: absolute;
+        height: 1cm;
+        width: 5cm;
+        background-color: brown;
+        margin-top: 30px;
+        top: 800px;
+        left: 200px;
+        border-style: solid;
+        border-color: crimson;
+        border-radius: 20px;
+      }
+      .submitbutton:hover {
+        transform: scale(1.05);
+      }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>C Hard Level</h1>
+    </div>
+    <div class="questionspace">
+        <p>1. What is a void pointer in C?</p>
+        <input type="radio" id=" Unusedpointer" name="HCquiz1" value="Unusedpointer"><label>Unused pointer</label>
+        <input type="radio" id="Pointerwithnotype" name="HCquiz1" value=" Pointerwithnotype"><label> Pointer with no type</label>
+        <input type="radio" id="Nullpointer" name="HCquiz1" value="Nullpointer"><label>Nullpointer</label>
+        <input type="radio" id="Doublepointer" name="HCquiz1" value="Doublepointer"><label>Double pointer</label>
+       
+          <br><hr>
+        <p>2. What is recursion?</p>
+        <input type="radio" id="Loop" name="HCquiz2" value="Loop"><label>Loop</label>
+        <input type="radio" id="self-call" name="HCquiz2" value="self-call"><label>self-call</label>
+        <input type="radio" id="Gotocall" name="HCquiz2" value="Gotocall"><label>Goto call</label>
+        <input type="radio" id="Infiniteloop" name="HCquiz2" value="Infiniteloop"><label>Infinite loop</label>
+         <br><hr>
+        
+        <p>3. Which memory is not managed by OS?</p>
+        <input type="radio" id="Stack" name="HCquiz3" value="Stack"><label>Stack</label>
+        <input type="radio" id="Heap" name="HCquiz3" value="Heap"><label>Heap</label>
+        <input type="radio" id="Static" name="HCquiz3" value="Static"><label>Static</label>
+        <input type="radio" id="Manual" name="HCquiz3" value="Manual"><label>Manual</label>
+       
+          <br><hr>
+        <p>4. Which function sets memory?</p>
+        <input type="radio" id="malloc" name="HCquiz4" value="malloc"><label>malloc</label>
+        <input type="radio" id="memset" name="HCquiz4" value="memset"><label>memset</label>
+        <input type="radio" id="calloc" name="HCquiz4" value="calloc"><label>calloc</label>
+        <input type="radio" id="memmove" name="HCquiz4" value="memmove"><label>memmove</label>
+       
+          <br><hr>
+        <p>5. Which header is needed for variable arguments?</p>
+        <input type="radio" id="stdarg" name="HCquiz5" value="stdarg"><label>stdarg.h</label>
+        <input type="radio" id=" stdio" name="HCquiz5" value=" stdio"><label> stdio.h</label>
+        <input type="radio" id="args" name="HCquiz5" value="args"><label>args.h</label>
+        <input type="radio" id="variadic" name="HCquiz5" value="variadic"><label>variadic.h</label>
+         <br><hr>
+        
+        <p>6. What is inline function?</p>
+        <input type="radio" id="Headeronly" name="HCquiz6" value="Headeronly"><label>Header only</label>
+        <input type="radio" id="expanded" name="HCquiz6" value="expanded"><label>Expanded at call</label>
+        <input type="radio" id="Recursive" name="HCquiz6" value="Recursive"><label>Recursive</label>
+        <input type="radio" id="Macro" name="HCquiz6" value="Macro"><label>Macro</label>
+       
+          <br><hr>
+        <p>7. Which keyword prevents modification?</p>
+        <input type="radio" id="static" name="HCquiz7" value="static"><label>static</label>
+        <input type="radio" id="final" name="HCquiz7" value="final"><label>final</label>
+        <input type="radio" id="const" name="HCquiz7" value="const"><label>const</label>
+        <input type="radio" id="restrict" name="HCquiz7" value="restrict"><label>restrict</label>
+         <br><hr>
+        
+        <p>8. What is returned by realloc()?</p>
+        <input type="radio" id="NULL" name="HCquiz8" value="NULL"><label>NULL</label>
+        <input type="radio" id="voidpointer" name="HCquiz8" value="voidpointer"><label>void pointer</label>
+        <input type="radio" id="Address" name="HCquiz8" value="Address"><label>Address</label>
+        <input type="radio" id="int" name="HCquiz8" value="int"><label>int</label>
+         <br><hr>
+        
+        <p>9. Which function moves memory safely?</p>
+        <input type="radio" id="memmove" name="HCquiz9" value="memmove"><label>memmove</label>
+        <input type="radio" id="memcpy" name="HCquiz9" value="memcpy"><label>memcpy</label>
+        <input type="radio" id="memcopy" name="HCquiz9" value="memcopy"><label>memcopy</label>
+        <input type="radio" id="strcpy" name="HCquiz9" value="strcpy"><label>strcpy</label>
+       
+          <br><hr>
+        <p>10. Which storage class cannot be used with register?</p>
+        <input type="radio" id="extern" name="HCquiz10" value="extern"><label>extern</label>
+        <input type="radio" id="static" name="HCquiz10" value="static"><label>static</label>
+        <input type="radio" id="auto" name="HCquiz10" value="auto"><label>auto</label>
+        <input type="radio" id="typedef" name="HCquiz10" value="typedef"><label>typedef</label>
+         
+        <div class="submitdiv">
+            <button class="submitbutton" onclick="result()">Submit</button>
+        </div>      
+        
+    </div>
+</body>
+ <script>
+    function result() {
+      const correctAnswers = {
+        HCquiz1: "Nullpointer",
+        HCquiz2: "self-call",
+        HCquiz3: "Heap",
+        HCquiz4: "memset",
+        HCquiz5: "stdarg",
+        HCquiz6: "expanded",
+        HCquiz7: "const",
+        HCquiz8: "Address",
+        HCquiz9: "memmove",
+        HCquiz10: "static",
+      };
+
+      let score = 0;
+      let total = Object.keys(correctAnswers).length;
+
+      for (let key in correctAnswers) {
+        const selected = document.querySelector(`input[name="${key}"]:checked`);
+        if (selected && selected.value === correctAnswers[key]) {
+          score++;
+        }
+      }
+
+      alert(`You got ${score} out of ${total} correct!`);
+    }
+  </script>
+</html>
